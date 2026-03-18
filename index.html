@@ -1,0 +1,2015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Walk Through Zechariah — A Devotional Journey</title>
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+/* ========== CSS RESET & VARIABLES ========== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #F5F0E8;
+  --surface: #FAF7F0;
+  --primary: #4A6741;
+  --primary-hover: #3d5736;
+  --primary-light: rgba(74, 103, 65, 0.1);
+  --secondary: #B8963E;
+  --secondary-light: rgba(184, 150, 62, 0.15);
+  --text: #1A1510;
+  --text-muted: #6B5D4F;
+  --text-inverse: #FAF7F0;
+  --border: rgba(26, 21, 16, 0.12);
+  --border-strong: rgba(26, 21, 16, 0.22);
+  --shadow-sm: 0 1px 3px rgba(44, 36, 22, 0.06);
+  --shadow-md: 0 4px 12px rgba(44, 36, 22, 0.08);
+  --shadow-lg: 0 8px 24px rgba(44, 36, 22, 0.1);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --correct: #4A6741;
+  --correct-bg: rgba(74, 103, 65, 0.1);
+  --incorrect: #a05a3c;
+  --incorrect-bg: rgba(160, 90, 60, 0.1);
+  --font-display: 'Cormorant', Georgia, serif;
+  --font-body: 'Satoshi', -apple-system, BlinkMacSystemFont, sans-serif;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="dark"] {
+  --bg: #1A1814;
+  --surface: #242019;
+  --primary: #6B8F5E;
+  --primary-hover: #7da06e;
+  --primary-light: rgba(107, 143, 94, 0.15);
+  --secondary: #D4AD4A;
+  --secondary-light: rgba(212, 173, 74, 0.15);
+  --text: #EDE7DB;
+  --text-muted: #A89C8E;
+  --text-inverse: #1A1814;
+  --border: rgba(237, 231, 219, 0.1);
+  --border-strong: rgba(237, 231, 219, 0.18);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.25);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.3);
+  --correct: #6B8F5E;
+  --correct-bg: rgba(107, 143, 94, 0.15);
+  --incorrect: #c47a5a;
+  --incorrect-bg: rgba(196, 122, 90, 0.15);
+}
+
+/* ========== BASE STYLES ========== */
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background var(--transition), color var(--transition);
+}
+
+/* ========== LAYOUT ========== */
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========== HEADER ========== */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 100;
+  transition: background var(--transition);
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.back-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: all var(--transition);
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.back-btn:hover { background: var(--primary-light); border-color: var(--primary); }
+.back-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.back-btn.visible { display: flex; }
+
+.header-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  letter-spacing: 0.01em;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition);
+  font-size: 16px;
+}
+.theme-toggle:hover { color: var(--secondary); border-color: var(--secondary); }
+.theme-toggle:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+/* ========== SCREENS ========== */
+.screen {
+  display: none;
+  flex: 1;
+  animation: fadeIn 0.35s ease;
+}
+.screen.active { display: flex; flex-direction: column; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ========== WELCOME SCREEN ========== */
+.welcome {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 0;
+  gap: 32px;
+}
+.welcome-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+.welcome-icon svg {
+  width: 100%;
+  height: 100%;
+}
+.welcome h1 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 6vw, 48px);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+.welcome-subtitle {
+  font-size: 16px;
+  color: var(--text-muted);
+  max-width: 400px;
+  margin: -12px auto 0;
+  line-height: 1.5;
+}
+.progress-section {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+.progress-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.progress-bar-container {
+  width: 100%;
+  height: 8px;
+  background: var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-radius: 4px;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 0;
+}
+.begin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 36px;
+  background: var(--primary);
+  color: var(--text-inverse);
+  border: none;
+  border-radius: var(--radius-lg);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  letter-spacing: 0.01em;
+}
+.begin-btn:hover { background: var(--primary-hover); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+.begin-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.begin-btn:active { transform: translateY(0); }
+
+/* ========== CHAPTER SELECT ========== */
+.chapter-select { padding: 32px 0 60px; gap: 24px; }
+.chapter-select h2 {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 700;
+  text-align: center;
+}
+.chapters-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+.chapter-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition);
+  text-align: left;
+}
+.chapter-card:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+.chapter-card:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.chapter-card.completed { border-color: var(--primary); }
+.chapter-card.in-progress { border-color: var(--secondary); }
+
+.chapter-icon {
+  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-light);
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+.chapter-card.completed .chapter-icon { background: var(--correct-bg); }
+.chapter-card.in-progress .chapter-icon { background: var(--secondary-light); }
+
+.chapter-info { flex: 1; min-width: 0; }
+.chapter-number {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+.chapter-name {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  margin-top: 2px;
+}
+
+.chapter-status {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border-strong);
+}
+.status-dot.in-progress { background: var(--secondary); }
+.status-dot.completed { background: var(--primary); }
+.status-text {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.completion-check {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  color: var(--text-inverse);
+  border-radius: 50%;
+  font-size: 14px;
+  animation: popIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+@keyframes popIn { 0% { transform: scale(0); } 100% { transform: scale(1); } }
+
+/* ========== CHAPTER SESSION ========== */
+.chapter-session { padding: 24px 0 60px; gap: 20px; }
+.session-header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.session-chapter-number {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--secondary);
+}
+.session-title {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 5vw, 36px);
+  font-weight: 700;
+  margin-top: 4px;
+  line-height: 1.2;
+}
+.session-progress {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 12px;
+}
+.session-progress-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--border-strong);
+  transition: all var(--transition);
+}
+.session-progress-dot.done { background: var(--primary); }
+.session-progress-dot.active { background: var(--secondary); box-shadow: 0 0 0 3px var(--secondary-light); }
+
+/* Tabs */
+.tabs {
+  display: flex;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 4px;
+  gap: 4px;
+}
+.tab-btn {
+  flex: 1;
+  padding: 10px 16px;
+  border: none;
+  background: transparent;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.tab-btn:hover { color: var(--text); }
+.tab-btn.active {
+  background: var(--primary);
+  color: var(--text-inverse);
+  font-weight: 600;
+}
+.tab-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+.tab-content { display: none; animation: fadeIn 0.3s ease; }
+.tab-content.active { display: block; }
+
+/* ========== DEVOTIONAL TAB ========== */
+.devotional-summary {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text);
+  margin-bottom: 28px;
+}
+.verse-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--secondary);
+  border-radius: var(--radius-md);
+  padding: 24px 28px;
+  margin-bottom: 28px;
+}
+.verse-text {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 3vw, 22px);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.verse-ref {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--secondary);
+  letter-spacing: 0.02em;
+}
+
+.reflection-section { margin-bottom: 8px; }
+.reflection-section h3 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+.reflection-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: all var(--transition);
+}
+.reflection-card:hover { border-color: var(--border-strong); }
+.reflection-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  text-align: left;
+  line-height: 1.5;
+  gap: 12px;
+}
+.reflection-toggle:focus-visible { outline: 2px solid var(--primary); outline-offset: -2px; }
+.reflection-arrow {
+  flex-shrink: 0;
+  transition: transform var(--transition);
+  color: var(--text-muted);
+  font-size: 12px;
+}
+.reflection-card.open .reflection-arrow { transform: rotate(180deg); }
+.reflection-body {
+  display: none;
+  padding: 0 20px 16px;
+}
+.reflection-card.open .reflection-body { display: block; }
+.reflection-space {
+  width: 100%;
+  min-height: 80px;
+  padding: 12px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text);
+  resize: vertical;
+}
+.reflection-space::placeholder { color: var(--text-muted); }
+
+/* ========== QUIZ TAB ========== */
+.quiz-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.quiz-progress-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.quiz-score {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--secondary);
+}
+.quiz-progress-bar {
+  width: 100%;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+.quiz-progress-fill {
+  height: 100%;
+  background: var(--primary);
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+.quiz-question {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 3vw, 22px);
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 24px;
+  color: var(--text);
+}
+.quiz-options { display: flex; flex-direction: column; gap: 10px; margin-bottom: 8px; }
+.quiz-option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition);
+  font-size: 15px;
+  color: var(--text);
+  text-align: left;
+}
+.quiz-option:hover:not(.disabled) { border-color: var(--primary); background: var(--primary-light); }
+.quiz-option:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.quiz-option.selected { border-color: var(--primary); background: var(--primary-light); }
+.quiz-option.correct { border-color: var(--correct); background: var(--correct-bg); }
+.quiz-option.incorrect { border-color: var(--incorrect); background: var(--incorrect-bg); }
+.quiz-option.disabled { cursor: default; opacity: 0.6; }
+.quiz-option.correct.disabled { opacity: 1; }
+
+.quiz-radio {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-strong);
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+}
+.quiz-option.selected .quiz-radio { border-color: var(--primary); }
+.quiz-option.selected .quiz-radio::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: var(--primary);
+  border-radius: 50%;
+}
+.quiz-option.correct .quiz-radio { border-color: var(--correct); }
+.quiz-option.correct .quiz-radio::after {
+  content: '✓';
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--correct);
+  background: none;
+  width: auto;
+  height: auto;
+}
+.quiz-option.incorrect .quiz-radio { border-color: var(--incorrect); }
+.quiz-option.incorrect .quiz-radio::after {
+  content: '✗';
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--incorrect);
+  background: none;
+  width: auto;
+  height: auto;
+}
+
+/* True/False buttons */
+.tf-buttons { display: flex; gap: 12px; margin-bottom: 8px; }
+.tf-btn {
+  flex: 1;
+  padding: 14px 20px;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  color: var(--text);
+}
+.tf-btn:hover:not(.disabled) { border-color: var(--primary); background: var(--primary-light); }
+.tf-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.tf-btn.selected { border-color: var(--primary); background: var(--primary-light); }
+.tf-btn.correct { border-color: var(--correct); background: var(--correct-bg); }
+.tf-btn.incorrect { border-color: var(--incorrect); background: var(--incorrect-bg); }
+.tf-btn.disabled { cursor: default; opacity: 0.6; }
+.tf-btn.correct.disabled { opacity: 1; }
+
+.quiz-feedback {
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  margin-top: 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  animation: fadeIn 0.3s ease;
+}
+.quiz-feedback.correct { background: var(--correct-bg); border: 1px solid var(--correct); }
+.quiz-feedback.incorrect { background: var(--incorrect-bg); border: 1px solid var(--incorrect); }
+.quiz-feedback strong { display: block; margin-bottom: 4px; font-size: 15px; }
+.quiz-feedback.correct strong { color: var(--correct); }
+.quiz-feedback.incorrect strong { color: var(--incorrect); }
+
+.quiz-next-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background: var(--primary);
+  color: var(--text-inverse);
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.quiz-next-btn:hover { background: var(--primary-hover); }
+.quiz-next-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+
+/* Quiz Results */
+.quiz-results {
+  text-align: center;
+  padding: 40px 20px;
+  animation: fadeIn 0.4s ease;
+}
+.quiz-results-score {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 8vw, 72px);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.quiz-results-label {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+.quiz-results-message {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 3vw, 24px);
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.quiz-results-sub {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+}
+
+/* ========== PUZZLE TAB ========== */
+.puzzle-instructions {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  line-height: 1.5;
+}
+.puzzle-instructions strong { color: var(--text); }
+
+/* Fill in the blank */
+.fib-reference {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--secondary);
+  margin-bottom: 16px;
+}
+.fib-template {
+  font-family: var(--font-display);
+  font-size: clamp(17px, 2.5vw, 20px);
+  line-height: 2;
+  color: var(--text);
+  margin-bottom: 24px;
+  background: var(--surface);
+  padding: 20px 24px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+}
+.fib-blank {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  height: 32px;
+  padding: 2px 12px;
+  background: var(--bg);
+  border: 2px dashed var(--border-strong);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--primary);
+  cursor: pointer;
+  vertical-align: middle;
+  transition: all var(--transition);
+}
+.fib-blank:hover { border-color: var(--primary); }
+.fib-blank.filled { border-style: solid; border-color: var(--primary); background: var(--primary-light); }
+.fib-blank.correct-blank { border-color: var(--correct); background: var(--correct-bg); color: var(--correct); }
+.fib-blank.incorrect-blank { border-color: var(--incorrect); background: var(--incorrect-bg); color: var(--incorrect); }
+
+.word-bank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.word-bank-title {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  width: 100%;
+}
+.word-chip {
+  padding: 8px 16px;
+  background: var(--surface);
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.word-chip:hover:not(.used) { border-color: var(--primary); background: var(--primary-light); }
+.word-chip:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.word-chip.used { opacity: 0.35; cursor: default; text-decoration: line-through; }
+
+/* Match Symbol */
+.match-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.match-column-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  text-align: center;
+}
+.match-item {
+  padding: 12px 16px;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  color: var(--text);
+  cursor: pointer;
+  transition: all var(--transition);
+  text-align: center;
+  line-height: 1.4;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.match-item:hover:not(.matched):not(.disabled) { border-color: var(--primary); }
+.match-item:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.match-item.selected { border-color: var(--secondary); background: var(--secondary-light); box-shadow: 0 0 0 2px var(--secondary-light); }
+.match-item.matched { border-color: var(--correct); background: var(--correct-bg); cursor: default; opacity: 0.8; }
+.match-item.wrong { border-color: var(--incorrect); background: var(--incorrect-bg); animation: shake 0.4s ease; }
+@keyframes shake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-4px); } 75% { transform: translateX(4px); } }
+
+/* Order Events */
+.order-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; }
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  color: var(--text);
+  transition: all var(--transition);
+  line-height: 1.4;
+}
+.order-item:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.order-number {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-light);
+  color: var(--primary);
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.order-text { flex: 1; }
+.order-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-shrink: 0;
+}
+.order-btn {
+  width: 28px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  border: 1px solid var(--border-strong);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 10px;
+  transition: all var(--transition);
+}
+.order-btn:hover { background: var(--primary-light); color: var(--primary); border-color: var(--primary); }
+.order-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 1px; }
+.order-btn:disabled { opacity: 0.3; cursor: default; }
+
+.order-item.correct-order { border-color: var(--correct); background: var(--correct-bg); }
+.order-item.incorrect-order { border-color: var(--incorrect); background: var(--incorrect-bg); }
+
+/* Puzzle feedback & buttons */
+.puzzle-check-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: var(--primary);
+  color: var(--text-inverse);
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.puzzle-check-btn:hover { background: var(--primary-hover); }
+.puzzle-check-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.puzzle-check-btn:disabled { opacity: 0.5; cursor: default; }
+
+.puzzle-feedback {
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  margin-top: 16px;
+  font-size: 15px;
+  font-weight: 600;
+  animation: fadeIn 0.3s ease;
+  line-height: 1.5;
+}
+.puzzle-feedback.success {
+  background: var(--correct-bg);
+  border: 1px solid var(--correct);
+  color: var(--correct);
+}
+.puzzle-feedback.error {
+  background: var(--incorrect-bg);
+  border: 1px solid var(--incorrect);
+  color: var(--incorrect);
+}
+
+.puzzle-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.puzzle-reset-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 24px;
+  background: transparent;
+  color: var(--text-muted);
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.puzzle-reset-btn:hover { border-color: var(--text-muted); color: var(--text); }
+.puzzle-reset-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+
+/* ========== FOOTER ========== */
+.app-footer {
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid var(--border);
+  margin-top: auto;
+}
+.app-footer a {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.app-footer a:hover { color: var(--secondary); }
+
+/* ========== CHAPTER COMPLETION OVERLAY ========== */
+.completion-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+.completion-overlay.visible { display: flex; }
+.completion-card {
+  background: var(--surface);
+  border-radius: var(--radius-xl);
+  padding: 40px 32px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: var(--shadow-lg);
+  animation: popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.completion-icon {
+  font-size: 56px;
+  margin-bottom: 16px;
+}
+.completion-title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.completion-sub {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+.completion-btn {
+  padding: 12px 28px;
+  background: var(--primary);
+  color: var(--text-inverse);
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.completion-btn:hover { background: var(--primary-hover); }
+.completion-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 600px) {
+  .app-container { padding: 0 16px; }
+  .match-grid { grid-template-columns: 1fr; gap: 8px; }
+  .match-grid .match-column { margin-bottom: 16px; }
+  .tabs { gap: 2px; padding: 3px; }
+  .tab-btn { padding: 8px 8px; font-size: 13px; }
+  .verse-card { padding: 20px; }
+  .fib-template { padding: 16px; }
+  .welcome { padding: 40px 0; }
+  .tf-buttons { flex-direction: column; }
+}
+
+/* ========== SCROLLBAR ========== */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* ========== FOCUS STYLES ========== */
+:focus { outline: none; }
+:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+/* Devotional complete marker */
+.devotional-done-section {
+  text-align: center;
+  padding: 24px 0 8px;
+}
+.devotional-done-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: var(--primary);
+  color: var(--text-inverse);
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.devotional-done-btn:hover { background: var(--primary-hover); }
+.devotional-done-btn:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.devotional-done-btn.completed {
+  background: var(--correct-bg);
+  color: var(--correct);
+  border: 1px solid var(--correct);
+  cursor: default;
+}
+</style>
+</head>
+<body>
+<div class="app-container">
+  <!-- Header -->
+  <header class="app-header" role="banner">
+    <div class="header-left">
+      <button class="back-btn" id="backBtn" onclick="goBack()" aria-label="Go back" tabindex="0">&#8592;</button>
+      <span class="header-title">Walk Through Zechariah</span>
+    </div>
+    <div class="header-right">
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle dark mode" tabindex="0">
+        <span id="themeIcon">&#9790;</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Welcome Screen -->
+  <main class="screen active" id="welcomeScreen" role="main">
+    <div class="welcome">
+      <div class="welcome-icon">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="80" height="80" rx="20" fill="var(--primary-light)"/>
+          <path d="M40 18C38 18 28 22 28 36V56C28 57 29 58 30 58H38V42H42V58H50C51 58 52 57 52 56V36C52 22 42 18 40 18Z" fill="var(--primary)" opacity="0.3"/>
+          <path d="M40 16C37 16 26 21 26 36V54C26 56.2 27.8 58 30 58H50C52.2 58 54 56.2 54 54V36C54 21 43 16 40 16Z" stroke="var(--primary)" stroke-width="2" fill="none"/>
+          <line x1="40" y1="24" x2="40" y2="52" stroke="var(--primary)" stroke-width="1.5"/>
+          <path d="M34 28C34 28 37 32 40 32C43 32 46 28 46 28" stroke="var(--secondary)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M32 36H48" stroke="var(--primary)" stroke-width="1" opacity="0.3"/>
+          <path d="M32 42H48" stroke="var(--primary)" stroke-width="1" opacity="0.3"/>
+          <path d="M32 48H48" stroke="var(--primary)" stroke-width="1" opacity="0.3"/>
+        </svg>
+      </div>
+      <h1>Walk Through<br>Zechariah</h1>
+      <p class="welcome-subtitle">A Devotional Journey Through the Book of Zechariah (ESV)</p>
+      <div class="progress-section">
+        <p class="progress-label" id="welcomeProgressLabel">0 of 14 chapters complete</p>
+        <div class="progress-bar-container">
+          <div class="progress-bar-fill" id="welcomeProgressBar" style="width: 0%"></div>
+        </div>
+      </div>
+      <button class="begin-btn" onclick="showChapterSelect()" tabindex="0">Begin Your Journey &#8594;</button>
+    </div>
+  </main>
+
+  <!-- Chapter Select Screen -->
+  <section class="screen" id="chapterSelectScreen">
+    <div class="chapter-select">
+      <h2>Select a Chapter</h2>
+      <div class="chapters-grid" id="chaptersGrid" role="list"></div>
+    </div>
+  </section>
+
+  <!-- Chapter Session Screen -->
+  <section class="screen" id="chapterSessionScreen">
+    <div class="chapter-session">
+      <div class="session-header">
+        <p class="session-chapter-number" id="sessionChapterNum"></p>
+        <h2 class="session-title" id="sessionTitle"></h2>
+        <div class="session-progress" id="sessionProgress">
+          <div class="session-progress-dot" data-mode="devotional" title="Devotional"></div>
+          <div class="session-progress-dot" data-mode="quiz" title="Quiz"></div>
+          <div class="session-progress-dot" data-mode="puzzle" title="Puzzle"></div>
+        </div>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab-btn active" role="tab" aria-selected="true" data-tab="devotional" onclick="switchTab('devotional')" tabindex="0">Devotional</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-tab="quiz" onclick="switchTab('quiz')" tabindex="0">Quiz</button>
+        <button class="tab-btn" role="tab" aria-selected="false" data-tab="puzzle" onclick="switchTab('puzzle')" tabindex="0">Puzzle</button>
+      </div>
+
+      <!-- Devotional Tab -->
+      <div class="tab-content active" id="devotionalTab" role="tabpanel"></div>
+
+      <!-- Quiz Tab -->
+      <div class="tab-content" id="quizTab" role="tabpanel"></div>
+
+      <!-- Puzzle Tab -->
+      <div class="tab-content" id="puzzleTab" role="tabpanel"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="app-footer" role="contentinfo">
+    <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+  </footer>
+</div>
+
+<!-- Completion Overlay -->
+<div class="completion-overlay" id="completionOverlay" role="dialog" aria-modal="true" aria-label="Chapter completed">
+  <div class="completion-card">
+    <div class="completion-icon">&#9733;</div>
+    <h3 class="completion-title" id="completionTitle">Chapter Complete!</h3>
+    <p class="completion-sub" id="completionSub">You've finished all three modes for this chapter. Beautiful work!</p>
+    <button class="completion-btn" onclick="closeCompletion()" tabindex="0">Continue</button>
+  </div>
+</div>
+
+<script>
+// ========== DATA ==========
+const CHAPTERS = [{"chapter": 1, "title": "Horsemen Among the Myrtles", "devotional": {"summary": "Zechariah opens with a warm but urgent invitation: return to God, and He will return to you. In the first of eight night visions, Zechariah sees a mysterious rider on a red horse standing among myrtle trees in a glen, accompanied by a heavenly patrol that reports the whole earth is at peaceful rest. The Angel of the LORD intercedes for Jerusalem, and God responds with tender reassurance — He has not forgotten His city, He is jealous for it, and He will return in mercy to see His house rebuilt. A second vision reinforces the promise: four craftsmen are sent to overthrow the very nations that had oppressed Israel.", "key_themes": ["Returning to God", "Divine Jealousy and Comfort"], "featured_verse": {"reference": "Zechariah 1:3", "text": "Therefore say to them, Thus declares the LORD of hosts: Return to me, says the LORD of hosts, and I will return to you, says the LORD of hosts."}, "reflection_prompts": ["Where in my life do I need to hear the invitation to 'return' to God today?", "How does it change my perspective to know that God is actively jealous — deeply invested — in my wellbeing and restoration?", "What 'myrtle tree moments' have I experienced — times when I felt low and overlooked, but God was actually present and interceding?"]}, "quiz": {"questions": [{"type": "multiple_choice", "question": "What color was the horse ridden by the man standing among the myrtle trees?", "options": ["A) Red", "B) White", "C) Black", "D) Dappled"], "correct": 0, "explanation": "Zechariah 1:8 describes the man riding a red horse, standing among the myrtle trees in the glen."}, {"type": "multiple_choice", "question": "What did the heavenly patrol report about the condition of the earth?", "options": ["A) All the earth is at rest and in peace", "B) War is spreading among the nations", "C) Jerusalem has been rebuilt", "D) The nations are in great turmoil"], "correct": 0, "explanation": "Zechariah 1:11 records the patrol reporting: 'We have patrolled the earth, and behold, all the earth remains at rest.'"}, {"type": "multiple_choice", "question": "What were the four craftsmen (smiths) sent to do?", "options": ["A) Terrify and cast down the four horns that scattered Israel", "B) Rebuild the walls of Jerusalem", "C) Measure the dimensions of the new temple", "D) Deliver a message to the high priest"], "correct": 0, "explanation": "Zechariah 1:21 explains: 'These have come to terrify them, to cast down the horns of the nations who lifted up their horns against the land of Judah to scatter it.'"}, {"type": "multiple_choice", "question": "What did the four horns represent in Zechariah's second vision?", "options": ["A) The nations that scattered Judah, Israel, and Jerusalem", "B) The four corners of the new temple", "C) Four angels standing before God", "D) The four seasons of the exile"], "correct": 0, "explanation": "Zechariah 1:19 states: 'These are the horns that have scattered Judah, Israel, and Jerusalem.'"}, {"type": "true_false", "question": "True or False: In Zechariah 1, God says He is only slightly displeased with the nations that oppressed Israel.", "correct": false, "explanation": "God says He is 'exceedingly angry' with the nations (Zechariah 1:15), because they furthered Israel's disaster beyond what God intended."}]}, "puzzle": {"type": "fill_in_blank", "verse_reference": "Zechariah 1:3", "template": "Therefore say to them, Thus declares the ____ of hosts: ____ to me, says the LORD of hosts, and I will ____ to you, says the LORD of ____.", "words": ["hosts", "Return", "LORD", "return"], "answers": ["LORD", "Return", "return", "hosts"]}}, {"chapter": 2, "title": "A Wall of Fire", "devotional": {"summary": "In this vision, a young man sets out to measure Jerusalem with a surveyor's line — but an angel rushes to stop him with astonishing news. The city God is planning cannot be contained by any wall, because it will overflow with people and life. God Himself will be its wall of fire and its inner glory. The chapter then shifts to an urgent call for scattered Jewish exiles still in Babylon to come home before judgment falls, with the stunning promise that many nations — not just Israel — will one day join themselves to the LORD. The vision ends with a call for all creation to be still before God.", "key_themes": ["God's Protecting Presence", "Universal Blessing"], "featured_verse": {"reference": "Zechariah 2:5", "text": "And I will be to her a wall of fire all around, declares the LORD, and I will be the glory in her midst."}, "reflection_prompts": ["Where am I trying to 'measure' or limit what God can do, when He may be planning something far bigger than my expectations?", "How does knowing I am the 'apple of God's eye' — the most carefully guarded thing to Him — change how I face today's challenges?", "What does it mean for me personally that God promises to be both a wall of protection around me and a source of glory within me?"]}, "quiz": {"questions": [{"type": "multiple_choice", "question": "What was the young man carrying as he went out in the vision?", "options": ["A) A measuring line", "B) A golden lamp", "C) A scroll", "D) A basket of grain"], "correct": 0, "explanation": "Zechariah 2:1 says: 'And I lifted my eyes and saw, and behold, a man with a measuring line in his hand!'"}, {"type": "multiple_choice", "question": "Why was Jerusalem told it would not need ordinary walls?", "options": ["A) Because it would be inhabited as villages without walls, due to the multitude of people and livestock", "B) Because all its enemies had already been destroyed", "C) Because the old walls were still standing", "D) Because the people were too poor to build walls"], "correct": 0, "explanation": "Zechariah 2:4 explains: 'Jerusalem shall be inhabited as villages without walls, because of the multitude of people and livestock in it.'"}, {"type": "multiple_choice", "question": "What phrase does God use to describe how precious Israel is to Him?", "options": ["A) The apple of his eye", "B) A treasure among the nations", "C) His firstborn son", "D) A light to the world"], "correct": 0, "explanation": "Zechariah 2:8 states that he who touches Israel 'touches the apple of his eye' — the most sensitive and carefully guarded part of the body."}, {"type": "true_false", "question": "True or False: In Zechariah 2, God promises that Jerusalem will be rebuilt with strong stone walls for protection.", "correct": false, "explanation": "God promises something better than walls — He declares He will be 'a wall of fire all around' Jerusalem (Zechariah 2:5), replacing physical fortifications with His own presence."}, {"type": "multiple_choice", "question": "What does God promise will happen with 'many nations' in Zechariah 2:11?", "options": ["A) Many nations shall join themselves to the LORD and be His people", "B) Many nations will pay tribute to Jerusalem", "C) Many nations will be defeated by Israel", "D) Many nations will send workers to rebuild the temple"], "correct": 0, "explanation": "Zechariah 2:11 declares: 'And many nations shall join themselves to the LORD in that day, and shall be my people.'"}]}, "puzzle": {"type": "match_symbol", "pairs": [{"symbol": "Man with a measuring line", "description": "A young man who set out to measure Jerusalem's width and length"}, {"symbol": "Wall of fire", "description": "God's supernatural protection encircling Jerusalem, replacing physical fortifications"}, {"symbol": "Apple of his eye", "description": "A phrase describing Israel's preciousness and God's fierce protection over her"}, {"symbol": "Daughter of Babylon", "description": "The land to the north where scattered Jews were urged to flee from before judgment"}, {"symbol": "Daughter of Zion", "description": "The name used to call God's people to sing and rejoice at His coming"}]}}, {"chapter": 3, "title": "A Brand Plucked from the Fire", "devotional": {"summary": "In this deeply moving vision, the high priest Joshua stands before God in filthy garments while Satan stands ready to accuse him. But God silences the accuser, describing Joshua as 'a brand plucked from the fire' — a stick snatched from destruction at the last possible moment. God commands Joshua's filthy clothes to be stripped away and replaced with clean priestly vestments and a fresh turban. This act of grace then opens into a magnificent promise: a coming figure called the Branch will one day remove the land's entire iniquity in a single day. The whole vision pulses with the assurance that God is in the business of cleaning up what sin has soiled.", "key_themes": ["Cleansing from Sin", "Messianic Hope"], "featured_verse": {"reference": "Zechariah 3:4", "text": "And the angel said to those who were standing before him, \"Remove the filthy garments from him.\" And to him he said, \"Behold, I have taken your iniquity away from you, and I will clothe you with pure vestments.\""}, "reflection_prompts": ["Where in my life do I feel like 'a brand plucked from the fire' — rescued from something I didn't deserve to survive?", "How does the image of God silencing my accuser and replacing my 'filthy garments' with clean ones speak to how I see my own standing before Him?", "What would it look like for me to walk in the clean vestments God has already given me, rather than still acting as if I'm wearing the old, dirty ones?"]}, "quiz": {"questions": [{"type": "multiple_choice", "question": "Who was standing at Joshua's right hand in the vision to accuse him?", "options": ["A) Satan", "B) An angel of judgment", "C) Zerubbabel", "D) The king of Persia"], "correct": 0, "explanation": "Zechariah 3:1 says: 'Then he showed me Joshua the high priest standing before the angel of the LORD, and Satan standing at his right hand to accuse him.'"}, {"type": "multiple_choice", "question": "What vivid image does God use to describe His rescue of Joshua?", "options": ["A) A brand plucked from the fire", "B) A lamb rescued from a lion", "C) A ship saved from a storm", "D) A seed planted in good soil"], "correct": 0, "explanation": "Zechariah 3:2 records God saying: 'Is not this a brand plucked from the fire?' — describing a burning stick rescued at the last moment from destruction."}, {"type": "multiple_choice", "question": "What was placed on Joshua's head as part of his restoration?", "options": ["A) A clean turban", "B) A crown of gold", "C) A wreath of myrtle", "D) A silver diadem"], "correct": 0, "explanation": "Zechariah 3:5 records: 'And I said, \"Let them put a clean turban on his head.\" So they put a clean turban on his head and clothed him with garments.'"}, {"type": "multiple_choice", "question": "How many eyes does the special stone set before Joshua have?", "options": ["A) Seven", "B) Four", "C) Two", "D) One"], "correct": 0, "explanation": "Zechariah 3:9 describes 'a single stone with seven eyes,' representing divine omniscience and the completeness of God's redemptive plan."}, {"type": "true_false", "question": "True or False: God promises in Zechariah 3 to remove the iniquity of the land in a single day.", "correct": true, "explanation": "Zechariah 3:9 declares: 'I will remove the iniquity of this land in a single day' — a promise pointing forward to the Messiah's atoning work."}]}, "puzzle": {"type": "order_events", "events": ["Satan stands at Joshua's right hand to accuse him", "The LORD rebukes Satan and declares Joshua a brand plucked from the fire", "The angel commands the filthy garments to be removed from Joshua", "Joshua is clothed with pure vestments and a clean turban", "God promises to bring His servant the Branch", "God declares He will remove the iniquity of the land in a single day"], "shuffled_order": [3, 0, 5, 1, 4, 2]}}, {"chapter": 4, "title": "Not by Might", "devotional": {"summary": "An angel wakes Zechariah like a man roused from sleep and shows him a golden lampstand burning brilliantly — not because anyone is refilling it, but because two olive trees on either side pipe oil directly into it. When Zechariah asks what this means, he receives one of the most quoted words in the entire Old Testament: 'Not by might, nor by power, but by my Spirit.' The vision is God's direct word to Zerubbabel, the governor struggling to finish the half-built temple: every obstacle before him will flatten into a plain, and the same hands that laid the foundation will finish the work. Even the 'small things' of faithful daily obedience matter deeply to God.", "key_themes": ["Spirit-Empowered Work", "God's Omniscience and Care"], "featured_verse": {"reference": "Zechariah 4:6", "text": "Then he said to me, \"This is the word of the LORD to Zerubbabel: Not by might, nor by power, but by my Spirit, says the LORD of hosts.\""}, "reflection_prompts": ["What 'great mountain' in my life feels impossible right now, and how does this promise that it will become a plain speak to me?", "Where am I relying more on my own strength or resources than on God's Spirit to accomplish something He has called me to?", "How does knowing that God cares about 'the day of small things' encourage me in the ordinary, unglamorous faithfulness of today?"]}, "quiz": {"questions": [{"type": "multiple_choice", "question": "What was the source of oil for the lampstand in the vision?", "options": ["A) Two olive trees on either side of it", "B) A large golden pitcher carried by an angel", "C) A river of oil flowing beneath the lampstand", "D) Seven priests who poured oil continuously"], "correct": 0, "explanation": "Zechariah 4:3 and 4:12 describe two olive trees (and their branches) supplying golden oil directly through pipes to the lampstand, with no human refilling required."}, {"type": "multiple_choice", "question": "To whom was the oracle 'Not by might, nor by power, but by my Spirit' directly addressed?", "options": ["A) Zerubbabel", "B) Joshua the high priest", "C) Zechariah himself", "D) The returning exiles"], "correct": 0, "explanation": "Zechariah 4:6 specifies: 'This is the word of the LORD to Zerubbabel' — the governor responsible for completing the temple."}, {"type": "multiple_choice", "question": "What will happen to the 'great mountain' before Zerubbabel?", "options": ["A) It will become a plain", "B) It will be split in two", "C) It will be set on fire", "D) It will sink into the sea"], "correct": 0, "explanation": "Zechariah 4:7 declares: 'Who are you, O great mountain? Before Zerubbabel you shall become a plain.'"}, {"type": "true_false", "question": "True or False: The seven lamps of the lampstand are identified as the seven eyes of the LORD that range through the whole earth.", "correct": true, "explanation": "Zechariah 4:10 confirms: 'These seven are the eyes of the LORD, which range through the whole earth' — symbolizing God's perfect omniscience."}, {"type": "multiple_choice", "question": "What are the 'two anointed ones' standing beside the Lord of the whole earth identified as in this vision?", "options": ["A) The two olive trees flanking the lampstand", "B) Two angels holding trumpets", "C) Two golden pillars at the temple entrance", "D) Two stone tablets of the law"], "correct": 0, "explanation": "Zechariah 4:14 identifies 'the two anointed ones who stand by the Lord of the whole earth' as the two olive trees — representing Zerubbabel and Joshua, the civil and priestly leaders of the restoration."}]}, "puzzle": {"type": "fill_in_blank", "verse_reference": "Zechariah 4:6", "template": "Then he said to me, \"This is the word of the ____ to Zerubbabel: Not by ____, nor by ____, but by my ____, says the LORD of hosts.\"", "words": ["Spirit", "might", "LORD", "power"], "answers": ["LORD", "might", "power", "Spirit"]}}, {"chapter": 5, "title": "The Scroll and the Basket", "devotional": {"summary": "Chapter 5 contains two remarkable visions about what God intends to sweep out of His restored community. First, a gigantic flying scroll — as large as a building — soars across the land carrying a divine curse against every thief and every person who swears falsely by God's name, entering their homes and consuming them entirely. Then comes an even stranger sight: a woman labeled 'Wickedness' is stuffed into a measuring basket, sealed with a lead cover, and carried off by two winged women to be housed permanently in Babylon. Together, these visions carry a bracing but ultimately hopeful message: God's new community will be genuinely holy, because He will root out and remove what corrupts it.", "key_themes": ["Divine Judgment Against Sin", "Purification of the Community"], "featured_verse": {"reference": "Zechariah 5:4", "text": "I will send it out, declares the LORD of hosts, and it shall enter the house of the thief, and the house of him who swears falsely by my name. And it shall remain in his house and consume it, both timber and stones."}, "reflection_prompts": ["How does knowing that God takes specific sins seriously — naming them and addressing them — both challenge and reassure me?", "Where in my life might I be tolerating 'wickedness in the basket' rather than letting God remove it fully?", "What does the vision of wickedness being permanently removed and contained say to me about God's ultimate purpose for the communities He builds?"]}, "quiz": {"questions": [{"type": "multiple_choice", "question": "What were the dimensions of the flying scroll in the vision?", "options": ["A) Twenty cubits long and ten cubits wide", "B) Ten cubits long and five cubits wide", "C) Forty cubits long and twenty cubits wide", "D) Five cubits long and five cubits wide"], "correct": 0, "explanation": "Zechariah 5:2 specifies the scroll was 'twenty cubits long and ten cubits wide' — dimensions matching the porch of Solomon's temple."}, {"type": "multiple_choice", "question": "What two categories of sinners does the flying scroll's curse specifically target?", "options": ["A) Thieves and those who swear falsely by God's name", "B) Murderers and idolaters", "C) Adulterers and Sabbath-breakers", "D) Those who oppress the poor and those who worship false gods"], "correct": 0, "explanation": "Zechariah 5:3-4 identifies thieves (violating the eighth commandment) and those who swear falsely by God's name (violating the third commandment)."}, {"type": "multiple_choice", "question": "What was the woman inside the ephah basket explicitly named?", "options": ["A) Wickedness", "B) Idolatry", "C) Foolishness", "D) Sorrow"], "correct": 0, "explanation": "Zechariah 5:8 states plainly: 'And he said, \"This is Wickedness.\"' — the woman is an embodiment of evil being removed from the land."}, {"type": "multiple_choice", "question": "Where was the ephah basket carried to by the two winged women?", "options": ["A) The land of Shinar (Babylon)", "B) Egypt", "C) The desert of Sinai", "D) The Mediterranean Sea"], "correct": 0, "explanation": "Zechariah 5:11 says the basket was taken to 'the land of Shinar' — the ancient name for Babylon, the historic home of rebellion and idolatry."}, {"type": "true_false", "question": "True or False: The flying scroll in Zechariah 5 only curses people after they appear before a judge and are found guilty.", "correct": false, "explanation": "The scroll actively 'goes out' across the whole land and enters the houses of sinners directly (Zechariah 5:3-4) — there is no delay or human tribunal required. God's judgment reaches into the home itself."}]}, "puzzle": {"type": "match_symbol", "pairs": [{"symbol": "Flying scroll", "description": "A massive aerial document carrying God's curse against theft and false swearing across the whole land"}, {"symbol": "Ephah basket", "description": "A standard commercial measuring container used to contain and remove wickedness from the land"}, {"symbol": "Lead cover", "description": "A heavy lid that seals the basket shut, representing God's containment of evil"}, {"symbol": "Woman labeled Wickedness", "description": "The personification of evil thrust back into the basket by the angel"}, {"symbol": "Two women with stork wings", "description": "Winged figures who carry the basket of wickedness away to Babylon"}, {"symbol": "Shinar", "description": "The ancient name for Babylon, the destination where wickedness is permanently housed"}]}}, {"chapter": 6, "title": "Chariots and a Crown", "devotional": {"summary": "The eight night visions come to a climax with four war chariots thundering out from between two bronze mountains, ranging across the whole earth as God's judgment force. The black and white horses head north toward Babylon, setting God's Spirit at rest — the long oppressor has been dealt with. Then the visions end and something unexpected happens: Zechariah is told to make a crown and place it not on the head of the governor, but on the head of Joshua the high priest. This act is a living prophecy pointing to a coming figure called the Branch, who will uniquely hold both royal and priestly authority — and bring a peace that only that combination can secure.", "key_themes": ["God's Sovereign Judgment", "The Coming Priest-King"], "featured_verse": {"reference": "Zechariah 6:12-13", "text": "And say to him, 'Thus says the LORD of hosts, \"Behold, the man whose name is the Branch: for he shall branch out from his place, and he shall build the temple of the LORD. It is he who shall build the temple of the LORD and shall bear royal honor, and shall sit and rule on his throne. And there shall be a priest on his throne, and the counsel of peace shall be between them both.\"'"}, "reflection_prompts": ["What 'north country' in my life — some long-standing source of oppression or fear — do I need to trust that God's Spirit has already been sent to address?", "How does the vision of Jesus as both King and Priest — the one who rules and the one who intercedes for me — change how I relate to Him in prayer?", "What does the promise that the Branch will bring 'the counsel of peace' mean for an area of my life where I am searching for peace right now?"]}, "quiz": {"questions": [{"type": "multiple_choice", "question": "What were the four chariots in the vision explicitly identified as?", "options": ["A) The four winds of heaven, after presenting themselves before the Lord of all the earth", "B) The armies of the four great empires", "C) Four angels carrying bowls of judgment", "D) The horsemen of the four seasons"], "correct": 0, "explanation": "Zechariah 6:5 states: 'These are the four winds of heaven, after presenting themselves before the Lord of all the earth.'"}, {"type": "multiple_choice", "question": "Which direction did the black and white horses travel, and what does that direction represent?", "options": ["A) North, toward Babylon", "B) South, toward Egypt", "C) East, toward Persia", "D) West, toward the sea"], "correct": 0, "explanation": "Zechariah 6:6 says the black horses go to the north country and the white follow — north being the direction Babylon lay relative to Jerusalem, representing God's judgment reaching the oppressor."}, {"type": "multiple_choice", "question": "On whose head did Zechariah place the crown that was made from silver and gold?", "options": ["A) Joshua the high priest", "B) Zerubbabel the governor", "C) The prophet Zechariah himself", "D) Heldai, the leader of the delegation"], "correct": 0, "explanation": "Zechariah 6:11 instructs: 'Take from them silver and gold, and make a crown, and set it on the head of Joshua, the son of Jehozadak, the high priest.'"}, {"type": "true_false", "question": "True or False: The crown placed on Joshua was to be kept by him permanently as a symbol of his personal authority.", "correct": false, "explanation": "Zechariah 6:14 says the crown was to 'be in the temple of the LORD as a reminder' — it was a prophetic memorial pointing to the coming Branch, not a personal grant of royal authority to Joshua."}, {"type": "multiple_choice", "question": "According to Zechariah 6:15, what condition is attached to the promise that 'those who are far off shall come and help to build the temple of the LORD'?", "options": ["A) If you will diligently obey the voice of the LORD your God", "B) If you complete the temple before winter", "C) If the governor and priest work together in unity", "D) If the nations stop opposing the work"], "correct": 0, "explanation": "Zechariah 6:15 closes with: 'And this shall come to pass, if you will diligently obey the voice of the LORD your God.'"}]}, "puzzle": {"type": "order_events", "events": ["Four chariots with colored horses emerge from between two bronze mountains", "The angel identifies the chariots as the four winds of heaven", "The black and white horses travel north toward Babylon", "The angel announces that God's Spirit has been set at rest in the north country", "Zechariah is instructed to make a crown from silver and gold", "The crown is placed on Joshua's head as a sign of the coming Branch"], "shuffled_order": [4, 1, 5, 2, 0, 3]}}, {"chapter": 7, "title": "What God Really Wants", "devotional": {"summary": "Two years after the night visions, a delegation arrives in Jerusalem with a practical religious question: should they keep fasting the way they did during the exile? God's response cuts to the heart. He asks whether their fasts were ever truly for Him in the first place — and whether their eating and drinking was either. What God has always wanted, the former prophets all testified, is not a careful calendar of religious rituals but a community that renders honest justice, shows genuine kindness, and protects the most vulnerable. The chapter closes with a sobering look at why the exile happened at all: the ancestors had made their hearts as hard as diamond, refused to listen, and reaped the whirlwind.", "key_themes": ["Obedience Over Ritual", "Justice and Compassion"], "featured_verse": {"reference": "Zechariah 7:9-10", "text": "\"Thus says the LORD of hosts, Render true judgments, show kindness and mercy to one another, do not oppress the widow, the fatherless, the sojourner, or the poor, and let none of you devise evil against another in your heart.\""}, "reflection_prompts": ["When I engage in spiritual practices — fasting, prayer, church attendance — am I honestly doing them for God, or primarily for how they make me feel about myself?", "Who are the 'widow, fatherless, sojourner, or poor' in my immediate circle or community, and what would it look like for me to show them kindness and mercy this week?", "Where might I be developing a 'diamond-hard' area of resistance to something God has been saying to me, and what would it take to soften that place?"]}, "quiz": {"questions": [{"type": "multiple_choice", "question": "What specific question did the delegation from Bethel come to ask?", "options": ["A) Whether they should continue fasting in the fifth and seventh months as they had done for seventy years", "B) Whether the temple would be finished before the next Passover", "C) Whether Jews still in Babylon should return to Jerusalem", "D) Whether the old land boundaries would be restored"], "correct": 0, "explanation": "Zechariah 7:3 records their question: 'Should I weep and abstain in the fifth month, as I have done for so many years?' — referring to the exile-era fasts."}, {"type": "multiple_choice", "question": "What four vulnerable groups does God specifically command the people to care for in Zechariah 7:10?", "options": ["A) The widow, the fatherless, the sojourner, and the poor", "B) The sick, the prisoner, the orphan, and the foreigner", "C) The elderly, the widow, the slave, and the stranger", "D) The poor, the hungry, the blind, and the lame"], "correct": 0, "explanation": "Zechariah 7:10 lists: 'do not oppress the widow, the fatherless, the sojourner, or the poor' — these four groups represent society's most vulnerable members."}, {"type": "multiple_choice", "question": "What image is used to describe how hard the ancestors' hearts had become?", "options": ["A) Diamond-hard", "B) Hard as stone", "C) Cold as iron", "D) Stiff as bronze"], "correct": 0, "explanation": "Zechariah 7:12 says 'they made their hearts diamond-hard' — the Hebrew word 'shamir' refers to the hardest known stone, used for engraving."}, {"type": "true_false", "question": "True or False: The fasts in the fifth and seventh months that the delegation asked about were commanded by Moses in the Torah.", "correct": false, "explanation": "These were not Mosaic fasts but traditions the community developed during the 70-year exile to commemorate national catastrophes — the destruction of the temple and the assassination of Gedaliah."}, {"type": "multiple_choice", "question": "How does God describe the judgment that fell on the ancestors who refused to listen?", "options": ["A) He scattered them with a whirlwind among all the nations and left the land desolate", "B) He sent drought and famine on the land for forty years", "C) He caused the nations to imprison them in their own cities", "D) He removed His presence from the temple and left it empty"], "correct": 0, "explanation": "Zechariah 7:14 describes the result: 'and I scattered them with a whirlwind among all the nations that they had not known. Thus the land they left was desolate.'"}]}, "puzzle": {"type": "fill_in_blank", "verse_reference": "Zechariah 7:9-10", "template": "Thus says the LORD of hosts, Render true ____, show ____ and mercy to one another, do not oppress the ____, the fatherless, the sojourner, or the ____, and let none of you devise evil against another in your heart.", "words": ["widow", "judgments", "poor", "kindness"], "answers": ["judgments", "kindness", "widow", "poor"]}}, {"chapter": 8, "title": "Fasts Turned to Feasts", "devotional": {"summary": "In a burst of ten short promises, God declares His passionate love for Jerusalem and His firm intention to restore it. He paints a picture of the city full of life — elderly men and women resting in the streets, children laughing and playing freely — a scene almost unimaginable to the weary, returned exiles. The agricultural hardships of exile will give way to abundance, and the people who were once a source of shame among the nations will become a source of blessing. Most remarkably, the seasons of mourning and fasting they have kept will be transformed into feasts of joy. The chapter ends with a breathtaking promise: people from every nation will seek the LORD through Israel, saying, 'Let us go with you, for we have heard that God is with you.'", "key_themes": ["Covenant Renewal", "Universal Blessing"], "featured_verse": {"reference": "Zechariah 8:13", "text": "And as you have been a byword of cursing among the nations, O house of Judah and house of Israel, so will I save you, and you shall be a blessing. Fear not, but let your hands be strong."}, "reflection_prompts": ["Where in my life am I waiting for a fast to be turned into a feast — and how does God's faithfulness to Israel encourage me to keep hoping?", "How can I be someone who draws others toward God, so that those around me sense 'God is with you'?", "What does it mean for me personally that God's zeal — his fierce, passionate love — is directed toward his people?"]}, "quiz": {"questions": [{"type": "multiple_choice", "question": "What does God say Jerusalem will be called in Zechariah 8:3?", "options": ["A) The faithful city and the holy mountain", "B) The city of peace and the golden hill", "C) The holy city and the blessed land", "D) The city of David and the mountain of fire"], "correct": 0, "explanation": "Zechariah 8:3 says God will dwell in Jerusalem and it will be called 'the faithful city' and 'the mountain of the LORD of hosts, the holy mountain.'"}, {"type": "multiple_choice", "question": "In the vision of restored Jerusalem in Zechariah 8:4–5, who fills the streets of the city?", "options": ["A) Old men and women with staffs, and children playing", "B) Merchants and traders from every nation", "C) Soldiers and priests in procession", "D) Prophets and singers praising God"], "correct": 0, "explanation": "Zechariah 8:4–5 describes old men and women sitting with staffs in the streets and children playing — a picture of safety and flourishing across generations."}, {"type": "multiple_choice", "question": "According to Zechariah 8:19, what will happen to the fasts of the fourth, fifth, seventh, and tenth months?", "options": ["A) They will become seasons of joy, gladness, and cheerful feasts", "B) They will be extended for an additional month", "C) They will be observed only in the temple", "D) They will be forgotten and no longer observed"], "correct": 0, "explanation": "Zechariah 8:19 declares these four commemorative fasts — which mourned stages of Jerusalem's fall — will become 'seasons of joy and gladness and cheerful feasts.'"}, {"type": "multiple_choice", "question": "In Zechariah 8:23, how many men from the nations take hold of the robe of a Jew?", "options": ["A) Ten", "B) Seven", "C) Twelve", "D) Forty"], "correct": 0, "explanation": "Zechariah 8:23 describes ten men from the nations of every tongue grabbing the robe of a Jew, saying, 'Let us go with you, for we have heard that God is with you.'"}, {"type": "true_false", "question": "True or False: In Zechariah 8, God says he will gather his people only from the east.", "correct": false, "explanation": "Zechariah 8:7 says God will save his people 'from the east country and from the west country' — gathering them from all directions, not just the east."}]}, "puzzle": {"type": "fill_in_blank", "verse_reference": "Zechariah 8:13", "template": "And as you have been a ____ of cursing among the nations, O house of ____ and house of Israel, so will I ____ you, and you shall be a ____. Fear not, but let your hands be ____.", "words": ["strong", "Judah", "byword", "blessing", "save"], "answers": ["byword", "Judah", "save", "blessing", "strong"]}}, {"chapter": 9, "title": "Here Comes Your King", "devotional": {"summary": "This chapter opens with divine judgment sweeping through the proud kingdoms surrounding Israel, clearing the way for something far greater. At its heart is one of the most celebrated prophecies in the entire Old Testament: a King is coming — righteous, victorious, and humble — riding not on a war horse but on a donkey. This King will bring an end to warfare and speak peace to the nations, ruling from one end of the earth to the other. The chapter closes with joyful images of God fighting for his people like a warrior and his redeemed shining like jewels on his land. Every word points forward to Jesus' triumphal entry into Jerusalem and the peace-bearing kingdom he inaugurated.", "key_themes": ["The Humble Messiah", "Eschatological Peace"], "featured_verse": {"reference": "Zechariah 9:9", "text": "Rejoice greatly, O daughter of Zion! Shout aloud, O daughter of Jerusalem! Behold, your king is coming to you; righteous and having salvation is he, humble and mounted on a donkey, on a colt, the foal of a donkey."}, "reflection_prompts": ["How does the image of a king arriving on a donkey challenge my expectations of what power and leadership should look like?", "Where do I need to 'rejoice greatly' today, trusting that this humble King is still coming and still reigning?", "What does it mean for my daily life that this King has already spoken peace to the nations — and that his rule reaches to the ends of the earth?"]}, "quiz": {"questions": [{"type": "multiple_choice", "question": "In Zechariah 9:9, what animal is the coming King described as riding?", "options": ["A) A donkey, on a colt, the foal of a donkey", "B) A white war horse", "C) A camel", "D) A young lion"], "correct": 0, "explanation": "Zechariah 9:9 specifically describes the King as 'humble and mounted on a donkey, on a colt, the foal of a donkey' — fulfilled in Jesus' triumphal entry in Matthew 21."}, {"type": "multiple_choice", "question": "According to Zechariah 9:10, what will the coming King cut off from Jerusalem?", "options": ["A) The war horse and battle bow", "B) The temple sacrifices", "C) The throne of David", "D) The foreign traders"], "correct": 0, "explanation": "Zechariah 9:10 says God 'will cut off the chariot from Ephraim and the war horse from Jerusalem; and the battle bow shall be cut off' — the King brings peace by removing the instruments of war."}, {"type": "multiple_choice", "question": "In Zechariah 9:11, what does God reference as the basis for freeing his 'prisoners from the waterless pit'?", "options": ["A) The blood of my covenant", "B) The law given to Moses", "C) The prayers of the people", "D) The faithfulness of the priests"], "correct": 0, "explanation": "Zechariah 9:11 says 'because of the blood of my covenant with you, I will set your prisoners free from the waterless pit' — a powerful image pointing to covenantal redemption."}, {"type": "multiple_choice", "question": "How are God's redeemed people described in Zechariah 9:16?", "options": ["A) Like the jewels of a crown shining on his land", "B) Like a mighty army in the field", "C) Like wheat stored in his barn", "D) Like stars scattered across the sky"], "correct": 0, "explanation": "Zechariah 9:16 says 'like the jewels of a crown they shall shine on his land' — a beautiful image of the worth and glory of God's redeemed people."}, {"type": "true_false", "question": "True or False: Zechariah 9:9 describes the coming King as 'righteous and having salvation.'", "correct": true, "explanation": "Zechariah 9:9 calls the King 'righteous and having salvation' (or 'victorious/saved') — he comes in righteousness and brings deliverance with him."}]}, "puzzle": {"type": "match_symbol", "pairs": [{"symbol": "King on a donkey", "description": "Royalty expressed through humility, not military might"}, {"symbol": "Prisoners in the waterless pit", "description": "God's people held in spiritual and physical bondage, awaiting redemption"}, {"symbol": "Judah as God's bow, Ephraim as God's arrow", "description": "The reunited people of Israel used as God's own instruments of victory"}, {"symbol": "Jewels of a crown", "description": "The inestimable worth of the redeemed people shining on God's land"}, {"symbol": "The battle bow cut off", "description": "The Messiah's reign brings an end to the instruments of warfare"}]}}, {"chapter": 10, "title": "The Shepherd Who Gathers", "devotional": {"summary": "God's people have been led astray by false guides — household idols, smooth-talking diviners — and they wander like sheep with no one to lead them well. But God is not indifferent to this. He declares his anger at the negligent shepherds and promises to raise up from within Judah a cornerstone, a secure tent peg, and a battle bow: a leader who is foundational, reliable, and victorious all at once. Then comes a stunning promise of homecoming — God will 'whistle' for his scattered people and bring them back from the farthest corners of the earth, crossing rivers and leveling mountains on their behalf. The chapter ends with a people who are strong in the LORD and who walk in his name.", "key_themes": ["False Leadership vs. the True Shepherd", "The Great Regathering"], "featured_verse": {"reference": "Zechariah 10:4", "text": "From him shall come the cornerstone, from him the tent peg, from him the battle bow, from him every ruler—all of them together."}, "reflection_prompts": ["Where have I been tempted to look for guidance in places that offer 'empty consolation' instead of turning to God directly?", "How does knowing that God personally gathers his scattered sheep — that he 'whistles' for them — affect the way I see people who feel lost or far from him?", "What does it mean for me that Jesus is my cornerstone, my tent peg, and my battle bow — foundational, secure, and victorious?"]}, "quiz": {"questions": [{"type": "multiple_choice", "question": "According to Zechariah 10:2, what is the result of people following household gods and diviners?", "options": ["A) The people wander like sheep with no shepherd", "B) The people become strong warriors", "C) The people are exiled to Babylon", "D) The people build false temples"], "correct": 0, "explanation": "Zechariah 10:2 says household gods 'give empty consolation' and the result is that 'the people wander like sheep; they are afflicted for lack of a shepherd.'"}, {"type": "multiple_choice", "question": "In Zechariah 10:3, what animal does God say he will make the house of Judah like in battle?", "options": ["A) His majestic steed", "B) A fierce lion", "C) An eagle with spread wings", "D) A mighty ox"], "correct": 0, "explanation": "Zechariah 10:3 says God 'will make the house of Judah like his majestic steed in battle' — transforming a shamed people into an instrument of divine power."}, {"type": "multiple_choice", "question": "In Zechariah 10:4, which of these is NOT listed as coming from Judah?", "options": ["A) The golden altar", "B) The cornerstone", "C) The tent peg", "D) The battle bow"], "correct": 0, "explanation": "Zechariah 10:4 lists the cornerstone, tent peg, battle bow, and every ruler as coming from Judah. A golden altar is not mentioned in this verse."}, {"type": "multiple_choice", "question": "From which two places does God promise to gather his people in Zechariah 10:10?", "options": ["A) Egypt and Assyria", "B) Babylon and Persia", "C) Greece and Rome", "D) The east and the west"], "correct": 0, "explanation": "Zechariah 10:10 specifically names Egypt and Assyria as the places of scattering — evoking Israel's two great historical exiles — from which God will bring his people home."}, {"type": "true_false", "question": "True or False: Zechariah 10:12 says God will make his people strong in themselves through their own efforts.", "correct": false, "explanation": "Zechariah 10:12 says 'I will make them strong in the LORD' — the strength comes from God, not from the people themselves, and they will 'walk in his name.'"}]}, "puzzle": {"type": "order_events", "events": ["The people follow household gods and diviners, wandering like sheep without a shepherd", "God declares his anger against the negligent shepherds who have failed Israel", "God promises that from Judah will come the cornerstone, tent peg, and battle bow", "God signals and gathers his scattered people from Egypt and Assyria", "God strikes down pride in Assyria and the scepter in Egypt", "The people are made strong in the LORD and walk in his name"], "shuffled_order": [3, 0, 5, 1, 4, 2]}}, {"chapter": 11, "title": "The Price of Rejection", "devotional": {"summary": "This chapter is one of the most sobering in all the prophets — a parable of rejection played out in slow, painful detail. God sends a shepherd to care for a flock being exploited and led to slaughter, but the people don't want him. When the shepherd asks what his service was worth to them, they weigh out thirty pieces of silver — the legal price of a slave — and God calls it, with cutting irony, 'the lordly price at which I was priced by them.' The shepherd breaks his two staffs, Favor and Union, enacting the withdrawal of God's protection and the fracturing of Israel's unity. The chapter closes with a stark warning: when the true shepherd is rejected, a worthless one takes his place. For Christian readers, this chapter's shadow falls unmistakably over the betrayal of Jesus.", "key_themes": ["The Rejected Shepherd", "The Consequences of Covenant Breaking"], "featured_verse": {"reference": "Zechariah 11:12–13", "text": "Then I said to them, 'If it seems good to you, give me my wages; but if not, keep them.' And they weighed out as my wages thirty pieces of silver. Then the LORD said to me, 'Throw it to the potter'—the lordly price at which I was priced by them. So I took the thirty pieces of silver and threw them into the house of the LORD, to the potter."}, "reflection_prompts": ["How do I tend to value Jesus — and are there ways I might be treating his presence in my life as something cheap or ordinary?", "What can the image of two broken staffs — Favor and Union — teach me about the cost of rejecting God's protection and the gift of community?", "Where do I see the pattern of 'rejecting the true shepherd and getting the worthless one' playing out in the world around me — and how does it make me grateful for Christ?"]}, "quiz": {"questions": [{"type": "multiple_choice", "question": "What were the names of the two staffs Zechariah used as shepherd in chapter 11?", "options": ["A) Favor and Union", "B) Grace and Peace", "C) Light and Truth", "D) Justice and Mercy"], "correct": 0, "explanation": "Zechariah 11:7 names the two staffs 'Favor' (also translated Beauty) and 'Union' (also translated Bonds), representing God's covenant protection of Israel and the unity of the nation."}, {"type": "multiple_choice", "question": "How much silver was weighed out as payment to Zechariah the shepherd?", "options": ["A) Thirty pieces of silver", "B) Twenty pieces of silver", "C) Fifty shekels of silver", "D) One hundred pieces of silver"], "correct": 0, "explanation": "Zechariah 11:12 records that thirty pieces of silver were weighed out — the legal price of a slave gored by an ox (Exodus 21:32), fulfilled exactly in Judas' betrayal of Jesus (Matthew 26:15)."}, {"type": "multiple_choice", "question": "Where did God tell Zechariah to throw the thirty pieces of silver?", "options": ["A) To the potter, in the house of the LORD", "B) Into the Kidron Valley", "C) At the feet of the elders", "D) Into the treasury of the king"], "correct": 0, "explanation": "Zechariah 11:13 records God saying 'Throw it to the potter' and Zechariah throwing it 'into the house of the LORD, to the potter' — fulfilled in Matthew 27:3–10 when Judas threw the money into the temple and it was used to buy a potter's field."}, {"type": "multiple_choice", "question": "In Zechariah 11:17, what two physical ailments are wished upon the worthless shepherd?", "options": ["A) A withered arm and a blinded right eye", "B) A deaf ear and a mute tongue", "C) Lame feet and a broken hand", "D) A blind left eye and a severed arm"], "correct": 0, "explanation": "Zechariah 11:17 says 'Let his arm be wholly withered, his right eye utterly blinded!' — the arm representing his power to lead and protect, the eye his ability to watch over the flock."}, {"type": "true_false", "question": "True or False: In Zechariah 11, the staff called 'Favor' represented the brotherhood between Judah and Israel.", "correct": false, "explanation": "The staff 'Favor' (or Beauty) represented God's gracious covenant sheltering Israel from the nations; the staff 'Union' (or Bonds) represented the brotherhood between Judah and Israel (Zechariah 11:7, 10, 14)."}]}, "puzzle": {"type": "match_symbol", "pairs": [{"symbol": "Staff named Favor", "description": "God's protective covenant that sheltered Israel from surrounding nations"}, {"symbol": "Staff named Union", "description": "The brotherhood and unity between Judah and Israel"}, {"symbol": "Thirty pieces of silver", "description": "The contemptuous slave-price offered as wages for the shepherd's work"}, {"symbol": "The worthless shepherd", "description": "The predatory leader given as judgment when the true shepherd is rejected"}, {"symbol": "Lebanon's cedars and oaks of Bashan", "description": "Mighty trees summoned to wail, symbolizing the fall of great leaders under judgment"}]}}, {"chapter": 12, "title": "They Will Look on the One They Pierced", "devotional": {"summary": "God speaks as Creator — the one who stretched out the heavens and formed the human spirit — to announce what he will do in the last days. Nations will gather against Jerusalem, certain they can crush it, but the city will become like an immovable boulder that injures all who try to lift it. God promises to fight for Jerusalem so powerfully that even the most ordinary person among them will be as mighty as David himself. Then comes the heart of the chapter: a moment of overwhelming national mourning, when God pours out a spirit of grace and the people look upon 'the one whom they have pierced.' The grief will be deep and personal — family by family, man and woman side by side — like weeping for an only child. It is a portrait of repentance initiated by God himself.", "key_themes": ["God's Unbreakable Defense of Jerusalem", "The Spirit-Initiated Mourning Over the Messiah"], "featured_verse": {"reference": "Zechariah 12:10", "text": "And I will pour out on the house of David and the inhabitants of Jerusalem a spirit of grace and pleas for mercy, so that, when they look on me, on him whom they have pierced, they shall mourn for him, as one mourns for an only child, and weep bitterly over him, as one weeps over a firstborn."}, "reflection_prompts": ["How does knowing that repentance itself is a gift — that God pours out the spirit that moves us to mourn and seek mercy — change the way I approach confession and prayer?", "What does it mean for me that the same God who was pierced is the one who invites me to 'look on him' and find grace rather than condemnation?", "Where do I see God acting as the immovable stone in situations that seem overwhelmingly stacked against his purposes?"]}, "quiz": {"questions": [{"type": "multiple_choice", "question": "In Zechariah 12:2–3, Jerusalem is described using two images. What are they?", "options": ["A) A cup of staggering and a heavy stone", "B) A burning furnace and a sharp sword", "C) A locked gate and a rising flood", "D) A broken wall and a failing lamp"], "correct": 0, "explanation": "Zechariah 12:2–3 describes Jerusalem as 'a cup of staggering' for surrounding nations and 'a heavy stone' that injures all who try to lift it — both images convey divine protection through apparent vulnerability."}, {"type": "multiple_choice", "question": "According to Zechariah 12:8, how mighty will the feeblest inhabitant of Jerusalem be on that day?", "options": ["A) Like David", "B) Like Solomon in all his glory", "C) Like a mighty angel", "D) Like a lion among sheep"], "correct": 0, "explanation": "Zechariah 12:8 says 'the feeblest among them on that day shall be like David' — with even the weakest person filled with extraordinary divine empowerment."}, {"type": "multiple_choice", "question": "In Zechariah 12:10, the mourning over the pierced one is compared to grieving for whom?", "options": ["A) An only child and a firstborn", "B) A king slain in battle", "C) A priest at the altar", "D) A prophet who spoke truth"], "correct": 0, "explanation": "Zechariah 12:10 compares the mourning to 'one who mourns for an only child' and one who 'weeps over a firstborn' — the two most devastating personal losses in an ancient context."}, {"type": "multiple_choice", "question": "In Zechariah 12:12–14, how does the mourning take place?", "options": ["A) Family by family, husbands and wives separately", "B) In one great assembly at the temple", "C) Only through the priests and Levites", "D) In the gates of the city on a single day"], "correct": 0, "explanation": "Zechariah 12:12–14 describes the mourning happening 'family by family' — royal, prophetic, priestly, and common families — with husbands and wives mourning separately, emphasizing personal, individual repentance."}, {"type": "true_false", "question": "True or False: In Zechariah 12:1, God identifies himself as the Creator of the heavens, the earth, and the spirit of man.", "correct": true, "explanation": "Zechariah 12:1 frames the entire oracle with God's identity as the one 'who stretches out the heavens and founds the earth and forms the spirit of man within him' — grounding the cosmic scope of the prophecy in God's creative authority."}]}, "puzzle": {"type": "order_events", "events": ["God declares himself as Creator of heavens, earth, and the human spirit", "All the nations of the earth gather against Jerusalem", "God makes Jerusalem a cup of staggering and a heavy stone for the nations", "God supernaturally defends Jerusalem so that the feeblest is like David", "God pours out a spirit of grace and pleas for mercy on the house of David", "The people look on the one they have pierced and mourn family by family"], "shuffled_order": [4, 1, 5, 0, 2, 3]}}, {"chapter": 13, "title": "A Fountain and a Fire", "devotional": {"summary": "The morning after the deepest mourning comes the clearest grace: a fountain thrown open to wash away sin and uncleanness. This is not a trickle but a flowing, inexhaustible source of cleansing — freely available to the house of David and to every inhabitant of Jerusalem. God then promises to sweep idolatry and false prophecy completely out of the land; the renewal will be so thorough that even former false prophets will abandon their garments and deny their old calling. The chapter pivots to a startling sword oracle: the Shepherd closest to God will be struck and the sheep scattered — a verse Jesus himself quoted on the night of his arrest. Yet this is not the end: from the scattering and the fire, a refined remnant will emerge, purified like gold, to declare in covenant language, 'The LORD is my God.'", "key_themes": ["Cleansing Through the Opened Fountain", "The Refined Remnant"], "featured_verse": {"reference": "Zechariah 13:1", "text": "On that day there shall be a fountain opened for the house of David and the inhabitants of Jerusalem, to cleanse them from sin and uncleanness."}, "reflection_prompts": ["How does the image of an ever-open, inexhaustible fountain for cleansing shape the way I come to God after I fail — with shame and distance, or with confidence in his grace?", "What areas of my life might still need the kind of 'refining fire' that produces something genuinely pure, even if the process is uncomfortable?", "How does the promise 'They are my people / The LORD is my God' — the covenant restored on the other side of the fire — give me hope for the hardest seasons of my life?"]}, "quiz": {"questions": [{"type": "multiple_choice", "question": "In Zechariah 13:1, the fountain is opened for whose benefit?", "options": ["A) The house of David and the inhabitants of Jerusalem", "B) The priests and Levites only", "C) The nations who come to worship", "D) The prophets and elders of Israel"], "correct": 0, "explanation": "Zechariah 13:1 specifies 'the house of David and the inhabitants of Jerusalem' — both the royal household and the ordinary people of the city — will have access to this cleansing fountain."}, {"type": "multiple_choice", "question": "According to Zechariah 13:4, what garment will former false prophets abandon to hide their former calling?", "options": ["A) A hairy cloak", "B) The priestly robe", "C) A royal sash", "D) The turban of a prophet"], "correct": 0, "explanation": "Zechariah 13:4 says false prophets will no longer 'wear a hairy cloak in order to deceive' — the coarse hair garment associated with prophets like Elijah and later John the Baptist."}, {"type": "multiple_choice", "question": "In Zechariah 13:7, how does God describe the shepherd who will be struck?", "options": ["A) The man who stands next to me", "B) The son of my servant David", "C) The one anointed with my Spirit", "D) The beloved of the whole nation"], "correct": 0, "explanation": "Zechariah 13:7 calls the stricken shepherd 'the man who stands next to me' (or 'my associate') — indicating intimate closeness and equality with the LORD of hosts, a remarkable pre-incarnational description."}, {"type": "multiple_choice", "question": "In Zechariah 13:8–9, what fraction of the land will be left surviving after the judgment?", "options": ["A) One third", "B) One half", "C) One fourth", "D) Two thirds"], "correct": 0, "explanation": "Zechariah 13:8–9 says two-thirds will be cut off and perish, while 'one third will be left alive' to be refined like silver and gold, emerging as God's covenant people."}, {"type": "true_false", "question": "True or False: Zechariah 13:9 ends with the refined remnant saying 'The LORD is my God.'", "correct": true, "explanation": "Zechariah 13:9 closes with the covenant exchange: God says 'They are my people' and they say 'The LORD is my God' — the complete restoration of the covenant relationship after the refining fire."}]}, "puzzle": {"type": "fill_in_blank", "verse_reference": "Zechariah 13:9", "template": "And I will put this ____ into the fire, and ____ them as one refines silver, and test them as gold is tested. They will call upon my ____, and I will ____ them. I will say, 'They are my people'; and they will say, 'The LORD is my ____.'", "words": ["God", "refine", "third", "name", "answer"], "answers": ["third", "refine", "name", "answer", "God"]}}, {"chapter": 14, "title": "The King Comes Home", "devotional": {"summary": "Zechariah closes with the most sweeping vision in the entire book: the LORD himself arriving on earth, feet touching the Mount of Olives, splitting it open to make a way of escape for his people. Cosmic signs accompany the day — unique light, continuous living waters flowing from Jerusalem to every sea — and the grand declaration that the LORD will be King over all the earth and his name will be one. The nations that opposed Jerusalem will face devastating judgment, while those who survive will stream to Jerusalem every year for the Feast of Booths. The final image is breathtaking in its ordinariness: horse bells and kitchen pots engraved with 'Holy to the LORD,' because in this kingdom, there is nothing left that isn't sacred.", "key_themes": ["The LORD's Physical Return as King", "Universal Holiness"], "featured_verse": {"reference": "Zechariah 14:8–9", "text": "On that day living waters shall flow out from Jerusalem, half of them to the eastern sea and half of them to the western sea. It shall continue in summer as in winter. And the LORD will be king over all the earth. On that day the LORD will be one and his name one."}, "reflection_prompts": ["What does the image of living water flowing in all directions — in summer and winter without fail — tell me about the kind of life God promises to those who are in his kingdom?", "How does the vision of horse bells and cooking pots inscribed 'Holy to the LORD' challenge the way I divide my life into 'spiritual' and 'ordinary' sections?", "When I look at the world's chaos and the gathering of forces against what is good and right, what does this chapter say to me about who ultimately holds the outcome?"]}, "quiz": {"questions": [{"type": "multiple_choice", "question": "According to Zechariah 14:4, where will the LORD's feet stand on the day of his return?", "options": ["A) The Mount of Olives, east of Jerusalem", "B) The Temple Mount in Jerusalem", "C) Mount Sinai in the wilderness", "D) Mount Carmel by the sea"], "correct": 0, "explanation": "Zechariah 14:4 says 'his feet shall stand on the Mount of Olives that lies before Jerusalem on the east' — the same mount from which Jesus ascended into heaven in Acts 1."}, {"type": "multiple_choice", "question": "In Zechariah 14:4, when the LORD stands on the Mount of Olives, what happens to it?", "options": ["A) It splits in two from east to west, creating a great valley", "B) It rises up to become the highest mountain on earth", "C) It is consumed by fire and becomes level ground", "D) It sinks into the ground and disappears"], "correct": 0, "explanation": "Zechariah 14:4 says the Mount of Olives 'shall be split in two from east to west by a very wide valley, so that one half shall move northward, and the other half southward.'"}, {"type": "multiple_choice", "question": "In Zechariah 14:8, where do the living waters flow from Jerusalem?", "options": ["A) Half to the eastern sea and half to the western sea", "B) Only northward toward the Sea of Galilee", "C) Into the desert to make it bloom", "D) Eastward only, into the Jordan River"], "correct": 0, "explanation": "Zechariah 14:8 says living waters flow 'half of them to the eastern sea and half of them to the western sea' — east toward the Dead Sea and west toward the Mediterranean — and continue in both summer and winter."}, {"type": "multiple_choice", "question": "According to Zechariah 14:16, which annual festival must all surviving nations attend in Jerusalem?", "options": ["A) The Feast of Booths (Tabernacles)", "B) The Feast of Passover", "C) The Feast of Weeks (Pentecost)", "D) The Day of Atonement"], "correct": 0, "explanation": "Zechariah 14:16 says survivors from all nations 'shall go up year after year to worship the King, the LORD of hosts, and to keep the Feast of Booths' — the harvest festival of ingathering becomes the emblem of universal Messianic worship."}, {"type": "multiple_choice", "question": "In Zechariah 14:20, what ordinary object will bear the inscription 'Holy to the LORD'?", "options": ["A) The bells of the horses", "B) The gates of the city", "C) The shields of the soldiers", "D) The crowns of the priests"], "correct": 0, "explanation": "Zechariah 14:20 says 'on that day there shall be inscribed on the bells of the horses, Holy to the LORD' — and even ordinary cooking pots will be as holy as the bowls before the altar."}]}, "puzzle": {"type": "match_symbol", "pairs": [{"symbol": "LORD standing on the Mount of Olives", "description": "God's physical arrival on earth, splitting the mountain to rescue his people"}, {"symbol": "Living waters flowing east and west", "description": "Perpetual, life-giving streams from Jerusalem that flow in summer and winter alike"}, {"symbol": "The Feast of Booths for all nations", "description": "The annual pilgrimage festival that every surviving nation must keep in the Messianic age"}, {"symbol": "'Holy to the LORD' on horse bells and cooking pots", "description": "The total consecration of all ordinary life — no division between sacred and secular remains"}, {"symbol": "Plague consuming enemies while they stand", "description": "Divine judgment on armies gathered against Jerusalem — absolute and inescapable"}, {"symbol": "The LORD will be one and his name one", "description": "The final, universal declaration that there is only one God and one true name for all peoples"}]}}];
+
+const CHAPTER_ICONS = ["🐎", "🔥", "👑", "🕯️", "📜", "🐴", "💛", "🎉", "🫏", "🐑", "💰", "💧", "⛲", "🏔️"];
+
+// ========== STATE ==========
+const state = {
+  currentScreen: 'welcome',
+  currentChapter: null,
+  currentTab: 'devotional',
+  // Per-chapter progress
+  progress: {},
+  // Quiz state per chapter
+  quizState: {},
+  // Puzzle state per chapter
+  puzzleState: {},
+};
+
+// Initialize progress for all chapters
+CHAPTERS.forEach(ch => {
+  state.progress[ch.chapter] = { devotional: false, quiz: false, puzzle: false };
+});
+
+// ========== THEME ==========
+function initTheme() {
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (prefersDark) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    document.getElementById('themeIcon').innerHTML = '&#9728;';
+  }
+}
+
+function toggleTheme() {
+  const html = document.documentElement;
+  const isDark = html.getAttribute('data-theme') === 'dark';
+  if (isDark) {
+    html.removeAttribute('data-theme');
+    document.getElementById('themeIcon').innerHTML = '&#9790;';
+  } else {
+    html.setAttribute('data-theme', 'dark');
+    document.getElementById('themeIcon').innerHTML = '&#9728;';
+  }
+}
+
+// ========== NAVIGATION ==========
+function showScreen(screenId) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(screenId).classList.add('active');
+  state.currentScreen = screenId;
+  
+  const backBtn = document.getElementById('backBtn');
+  if (screenId === 'welcomeScreen') {
+    backBtn.classList.remove('visible');
+  } else if (screenId === 'chapterSelectScreen') {
+    backBtn.classList.add('visible');
+  } else {
+    backBtn.classList.add('visible');
+  }
+  
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function goBack() {
+  if (state.currentScreen === 'chapterSessionScreen') {
+    showChapterSelect();
+  } else if (state.currentScreen === 'chapterSelectScreen') {
+    showWelcome();
+  }
+}
+
+function showWelcome() {
+  updateWelcomeProgress();
+  showScreen('welcomeScreen');
+}
+
+function showChapterSelect() {
+  renderChapterGrid();
+  showScreen('chapterSelectScreen');
+}
+
+function showChapterSession(chapterNum) {
+  state.currentChapter = chapterNum;
+  state.currentTab = 'devotional';
+  renderSession();
+  showScreen('chapterSessionScreen');
+}
+
+// ========== WELCOME PROGRESS ==========
+function getCompletedCount() {
+  let count = 0;
+  CHAPTERS.forEach(ch => {
+    const p = state.progress[ch.chapter];
+    if (p.devotional && p.quiz && p.puzzle) count++;
+  });
+  return count;
+}
+
+function updateWelcomeProgress() {
+  const completed = getCompletedCount();
+  document.getElementById('welcomeProgressLabel').textContent = completed + ' of 14 chapters complete';
+  document.getElementById('welcomeProgressBar').style.width = ((completed / 14) * 100) + '%';
+}
+
+// ========== CHAPTER GRID ==========
+function getChapterStatus(chapterNum) {
+  const p = state.progress[chapterNum];
+  if (p.devotional && p.quiz && p.puzzle) return 'completed';
+  if (p.devotional || p.quiz || p.puzzle) return 'in-progress';
+  return 'not-started';
+}
+
+function getModesCompleted(chapterNum) {
+  const p = state.progress[chapterNum];
+  let c = 0;
+  if (p.devotional) c++;
+  if (p.quiz) c++;
+  if (p.puzzle) c++;
+  return c;
+}
+
+function renderChapterGrid() {
+  const grid = document.getElementById('chaptersGrid');
+  grid.innerHTML = '';
+  
+  CHAPTERS.forEach((ch, idx) => {
+    const status = getChapterStatus(ch.chapter);
+    const modesCount = getModesCompleted(ch.chapter);
+    
+    const card = document.createElement('div');
+    card.className = 'chapter-card' + (status !== 'not-started' ? ' ' + status.replace('-', '') : '');
+    card.setAttribute('role', 'listitem');
+    card.setAttribute('tabindex', '0');
+    card.setAttribute('aria-label', 'Chapter ' + ch.chapter + ': ' + ch.title + ', ' + status.replace('-', ' '));
+    card.onclick = () => showChapterSession(ch.chapter);
+    card.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); showChapterSession(ch.chapter); } };
+    
+    let statusHTML = '';
+    if (status === 'completed') {
+      statusHTML = '<div class="completion-check" aria-label="Completed">&#10003;</div>';
+    } else if (status === 'in-progress') {
+      statusHTML = '<div class="chapter-status"><div class="status-dot in-progress"></div><span class="status-text">' + modesCount + '/3</span></div>';
+    } else {
+      statusHTML = '<div class="chapter-status"><div class="status-dot"></div></div>';
+    }
+    
+    card.innerHTML = `
+      <div class="chapter-icon">${CHAPTER_ICONS[idx]}</div>
+      <div class="chapter-info">
+        <div class="chapter-number">Chapter ${ch.chapter}</div>
+        <div class="chapter-name">${ch.title}</div>
+      </div>
+      ${statusHTML}
+    `;
+    
+    grid.appendChild(card);
+  });
+}
+
+// ========== SESSION RENDERING ==========
+function getChapterData() {
+  return CHAPTERS.find(ch => ch.chapter === state.currentChapter);
+}
+
+function renderSession() {
+  const ch = getChapterData();
+  if (!ch) return;
+  
+  document.getElementById('sessionChapterNum').textContent = 'Chapter ' + ch.chapter;
+  document.getElementById('sessionTitle').textContent = ch.title;
+  
+  updateSessionProgress();
+  
+  // Reset tabs to devotional
+  switchTab('devotional');
+  
+  renderDevotional(ch);
+  renderQuiz(ch);
+  renderPuzzle(ch);
+}
+
+function updateSessionProgress() {
+  const p = state.progress[state.currentChapter];
+  const dots = document.querySelectorAll('#sessionProgress .session-progress-dot');
+  const modes = ['devotional', 'quiz', 'puzzle'];
+  dots.forEach((dot, i) => {
+    dot.className = 'session-progress-dot';
+    if (p[modes[i]]) dot.classList.add('done');
+    if (modes[i] === state.currentTab) dot.classList.add('active');
+  });
+}
+
+function switchTab(tabName) {
+  state.currentTab = tabName;
+  
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    const isActive = btn.dataset.tab === tabName;
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-selected', isActive);
+  });
+  
+  document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+  document.getElementById(tabName + 'Tab').classList.add('active');
+  
+  updateSessionProgress();
+}
+
+// ========== DEVOTIONAL ==========
+function renderDevotional(ch) {
+  const tab = document.getElementById('devotionalTab');
+  const isDone = state.progress[ch.chapter].devotional;
+  
+  let promptsHTML = ch.devotional.reflection_prompts.map((p, i) => `
+    <div class="reflection-card" id="refl-${ch.chapter}-${i}">
+      <button class="reflection-toggle" onclick="toggleReflection(${ch.chapter}, ${i})" aria-expanded="false">
+        <span>${p}</span>
+        <span class="reflection-arrow">&#9660;</span>
+      </button>
+      <div class="reflection-body">
+        <textarea class="reflection-space" placeholder="Write your thoughts here..." aria-label="Your reflection"></textarea>
+      </div>
+    </div>
+  `).join('');
+  
+  tab.innerHTML = `
+    <div class="devotional-summary">${ch.devotional.summary}</div>
+    <div class="verse-card">
+      <div class="verse-text">"${ch.devotional.featured_verse.text}"</div>
+      <div class="verse-ref">&mdash; ${ch.devotional.featured_verse.reference}</div>
+    </div>
+    <div class="reflection-section">
+      <h3>Reflect</h3>
+      ${promptsHTML}
+    </div>
+    <div class="devotional-done-section">
+      <button class="devotional-done-btn${isDone ? ' completed' : ''}" id="devotionalDoneBtn" onclick="markDevotionalDone()" tabindex="0">
+        ${isDone ? '&#10003; Devotional Complete' : 'Mark Devotional Complete'}
+      </button>
+    </div>
+  `;
+}
+
+function toggleReflection(chapter, index) {
+  const card = document.getElementById('refl-' + chapter + '-' + index);
+  const toggle = card.querySelector('.reflection-toggle');
+  card.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', card.classList.contains('open'));
+}
+
+function markDevotionalDone() {
+  if (state.progress[state.currentChapter].devotional) return;
+  state.progress[state.currentChapter].devotional = true;
+  const btn = document.getElementById('devotionalDoneBtn');
+  btn.classList.add('completed');
+  btn.innerHTML = '&#10003; Devotional Complete';
+  updateSessionProgress();
+  checkChapterCompletion();
+}
+
+// ========== QUIZ ==========
+function getQuizState(chapterNum) {
+  if (!state.quizState[chapterNum]) {
+    state.quizState[chapterNum] = {
+      currentQ: 0,
+      score: 0,
+      answered: false,
+      finished: false,
+      answers: []
+    };
+  }
+  return state.quizState[chapterNum];
+}
+
+function renderQuiz(ch) {
+  const qs = getQuizState(ch.chapter);
+  const tab = document.getElementById('quizTab');
+  
+  if (qs.finished) {
+    renderQuizResults(ch);
+    return;
+  }
+  
+  const questions = ch.quiz.questions;
+  const q = questions[qs.currentQ];
+  const total = questions.length;
+  
+  let optionsHTML = '';
+  
+  if (q.type === 'true_false') {
+    optionsHTML = `
+      <div class="tf-buttons" id="tfButtons">
+        <button class="tf-btn" onclick="answerTF(true)" tabindex="0">True</button>
+        <button class="tf-btn" onclick="answerTF(false)" tabindex="0">False</button>
+      </div>
+    `;
+  } else {
+    optionsHTML = '<div class="quiz-options" id="quizOptions">';
+    q.options.forEach((opt, i) => {
+      optionsHTML += `
+        <button class="quiz-option" onclick="answerMC(${i})" tabindex="0" data-index="${i}">
+          <span class="quiz-radio"></span>
+          <span>${opt}</span>
+        </button>
+      `;
+    });
+    optionsHTML += '</div>';
+  }
+  
+  tab.innerHTML = `
+    <div class="quiz-progress">
+      <span class="quiz-progress-text">Question ${qs.currentQ + 1} of ${total}</span>
+      <span class="quiz-score">Score: ${qs.score}/${total}</span>
+    </div>
+    <div class="quiz-progress-bar">
+      <div class="quiz-progress-fill" style="width: ${((qs.currentQ) / total) * 100}%"></div>
+    </div>
+    <div class="quiz-question">${q.question}</div>
+    ${optionsHTML}
+    <div id="quizFeedback"></div>
+    <div id="quizNextContainer" style="display:none;">
+      <button class="quiz-next-btn" onclick="nextQuizQuestion()" tabindex="0">
+        ${qs.currentQ < total - 1 ? 'Next Question &#8594;' : 'See Results &#8594;'}
+      </button>
+    </div>
+  `;
+}
+
+function answerMC(selectedIndex) {
+  const ch = getChapterData();
+  const qs = getQuizState(ch.chapter);
+  if (qs.answered) return;
+  qs.answered = true;
+  
+  const q = ch.quiz.questions[qs.currentQ];
+  const correct = selectedIndex === q.correct;
+  if (correct) qs.score++;
+  qs.answers.push({ selected: selectedIndex, correct });
+  
+  // Update UI
+  const options = document.querySelectorAll('#quizOptions .quiz-option');
+  options.forEach((opt, i) => {
+    opt.classList.add('disabled');
+    if (i === selectedIndex) {
+      opt.classList.add(correct ? 'correct' : 'incorrect');
+    }
+    if (i === q.correct && !correct) {
+      opt.classList.add('correct');
+    }
+  });
+  
+  showQuizFeedback(correct, q.explanation);
+}
+
+function answerTF(selected) {
+  const ch = getChapterData();
+  const qs = getQuizState(ch.chapter);
+  if (qs.answered) return;
+  qs.answered = true;
+  
+  const q = ch.quiz.questions[qs.currentQ];
+  const correct = selected === q.correct;
+  if (correct) qs.score++;
+  qs.answers.push({ selected, correct });
+  
+  const buttons = document.querySelectorAll('#tfButtons .tf-btn');
+  buttons.forEach(btn => {
+    btn.classList.add('disabled');
+    const btnValue = btn.textContent.trim() === 'True';
+    if (btnValue === selected) {
+      btn.classList.add(correct ? 'correct' : 'incorrect');
+    }
+    if (btnValue === q.correct && !correct) {
+      btn.classList.add('correct');
+    }
+  });
+  
+  showQuizFeedback(correct, q.explanation);
+}
+
+function showQuizFeedback(correct, explanation) {
+  const fb = document.getElementById('quizFeedback');
+  fb.innerHTML = `
+    <div class="quiz-feedback ${correct ? 'correct' : 'incorrect'}">
+      <strong>${correct ? '&#10003; Correct!' : 'Not quite'}</strong>
+      ${explanation}
+    </div>
+  `;
+  document.getElementById('quizNextContainer').style.display = 'block';
+  document.querySelector('.quiz-next-btn').focus();
+}
+
+function nextQuizQuestion() {
+  const ch = getChapterData();
+  const qs = getQuizState(ch.chapter);
+  qs.currentQ++;
+  qs.answered = false;
+  
+  if (qs.currentQ >= ch.quiz.questions.length) {
+    qs.finished = true;
+    state.progress[ch.chapter].quiz = true;
+    updateSessionProgress();
+    renderQuizResults(ch);
+    checkChapterCompletion();
+  } else {
+    renderQuiz(ch);
+  }
+}
+
+function renderQuizResults(ch) {
+  const qs = getQuizState(ch.chapter);
+  const total = ch.quiz.questions.length;
+  const score = qs.score;
+  const tab = document.getElementById('quizTab');
+  
+  let message = '';
+  let sub = '';
+  if (score === total) {
+    message = 'Perfect Score!';
+    sub = 'You have a wonderful grasp of this chapter. Well done!';
+  } else if (score >= total * 0.8) {
+    message = 'Great Work!';
+    sub = 'You really know this material well. Keep it up!';
+  } else if (score >= total * 0.6) {
+    message = 'Good Effort!';
+    sub = 'You\'re learning so much. Consider revisiting the devotional for deeper insight.';
+  } else {
+    message = 'Keep Going!';
+    sub = 'Every step in this journey matters. Revisit the chapter and try again anytime.';
+  }
+  
+  tab.innerHTML = `
+    <div class="quiz-results">
+      <div class="quiz-results-score">${score}/${total}</div>
+      <div class="quiz-results-label">questions correct</div>
+      <div class="quiz-results-message">${message}</div>
+      <p class="quiz-results-sub">${sub}</p>
+      <button class="quiz-next-btn" onclick="retakeQuiz()" tabindex="0">Retake Quiz</button>
+    </div>
+  `;
+}
+
+function retakeQuiz() {
+  const ch = getChapterData();
+  state.quizState[ch.chapter] = null;
+  renderQuiz(ch);
+}
+
+// ========== PUZZLE ==========
+function getPuzzleState(chapterNum) {
+  if (!state.puzzleState[chapterNum]) {
+    state.puzzleState[chapterNum] = { solved: false };
+  }
+  return state.puzzleState[chapterNum];
+}
+
+function renderPuzzle(ch) {
+  const ps = getPuzzleState(ch.chapter);
+  const puzzle = ch.puzzle;
+  
+  if (ps.solved) {
+    renderPuzzleSolved(ch);
+    return;
+  }
+  
+  switch (puzzle.type) {
+    case 'fill_in_blank': renderFIB(ch); break;
+    case 'match_symbol': renderMatch(ch); break;
+    case 'order_events': renderOrder(ch); break;
+  }
+}
+
+// ---- Fill in the Blank ----
+function renderFIB(ch) {
+  const puzzle = ch.puzzle;
+  const tab = document.getElementById('puzzleTab');
+  
+  // Create blanks from template
+  let blankIndex = 0;
+  const templateHTML = puzzle.template.replace(/__+/g, () => {
+    const idx = blankIndex++;
+    return `<span class="fib-blank" id="fib-blank-${idx}" onclick="removeFIBWord(${idx})" tabindex="0" data-index="${idx}" role="button" aria-label="Blank ${idx + 1}, empty"></span>`;
+  });
+  
+  // Shuffle words for word bank
+  const shuffledWords = [...puzzle.words].sort(() => Math.random() - 0.5);
+  
+  const wordsHTML = shuffledWords.map((w, i) => `
+    <button class="word-chip" id="word-chip-${i}" onclick="placeFIBWord(${i}, '${w.replace(/'/g, "\\'")}')" data-word="${w}" tabindex="0">${w}</button>
+  `).join('');
+  
+  tab.innerHTML = `
+    <div class="puzzle-instructions"><strong>Fill in the Blank:</strong> Tap a word from the bank below to fill the next empty blank. Tap a filled blank to remove the word.</div>
+    <div class="fib-reference">${puzzle.verse_reference}</div>
+    <div class="fib-template">${templateHTML}</div>
+    <div class="word-bank">
+      <div class="word-bank-title">Word Bank</div>
+      ${wordsHTML}
+    </div>
+    <div class="puzzle-actions">
+      <button class="puzzle-check-btn" onclick="checkFIB()" tabindex="0">Check Answers</button>
+      <button class="puzzle-reset-btn" onclick="renderFIB(getChapterData())" tabindex="0">Reset</button>
+    </div>
+    <div id="puzzleFeedback"></div>
+  `;
+  
+  // Store state for this puzzle
+  window._fibState = {
+    filled: new Array(puzzle.answers.length).fill(null),
+    wordUsed: new Array(shuffledWords.length).fill(false),
+    words: shuffledWords
+  };
+}
+
+function placeFIBWord(chipIndex, word) {
+  const fs = window._fibState;
+  if (fs.wordUsed[chipIndex]) return;
+  
+  // Find first empty blank
+  const emptyIdx = fs.filled.indexOf(null);
+  if (emptyIdx === -1) return;
+  
+  fs.filled[emptyIdx] = { chipIndex, word };
+  fs.wordUsed[chipIndex] = true;
+  
+  // Update UI
+  const blank = document.getElementById('fib-blank-' + emptyIdx);
+  blank.textContent = word;
+  blank.classList.add('filled');
+  blank.setAttribute('aria-label', 'Blank ' + (emptyIdx + 1) + ', filled with ' + word);
+  
+  const chip = document.getElementById('word-chip-' + chipIndex);
+  chip.classList.add('used');
+}
+
+function removeFIBWord(blankIndex) {
+  const fs = window._fibState;
+  const entry = fs.filled[blankIndex];
+  if (!entry) return;
+  
+  fs.wordUsed[entry.chipIndex] = false;
+  fs.filled[blankIndex] = null;
+  
+  const blank = document.getElementById('fib-blank-' + blankIndex);
+  blank.textContent = '';
+  blank.classList.remove('filled', 'correct-blank', 'incorrect-blank');
+  blank.setAttribute('aria-label', 'Blank ' + (blankIndex + 1) + ', empty');
+  
+  const chip = document.getElementById('word-chip-' + entry.chipIndex);
+  chip.classList.remove('used');
+}
+
+function checkFIB() {
+  const ch = getChapterData();
+  const fs = window._fibState;
+  const answers = ch.puzzle.answers;
+  let allCorrect = true;
+  
+  answers.forEach((ans, i) => {
+    const blank = document.getElementById('fib-blank-' + i);
+    const entry = fs.filled[i];
+    if (entry && entry.word === ans) {
+      blank.classList.add('correct-blank');
+      blank.classList.remove('incorrect-blank');
+    } else {
+      blank.classList.add('incorrect-blank');
+      blank.classList.remove('correct-blank');
+      allCorrect = false;
+    }
+  });
+  
+  const fb = document.getElementById('puzzleFeedback');
+  if (allCorrect) {
+    fb.innerHTML = '<div class="puzzle-feedback success">&#10003; Perfect! You filled in every word correctly.</div>';
+    state.progress[ch.chapter].puzzle = true;
+    state.puzzleState[ch.chapter].solved = true;
+    updateSessionProgress();
+    checkChapterCompletion();
+  } else {
+    fb.innerHTML = '<div class="puzzle-feedback error">Not quite right. Check the highlighted blanks and try again!</div>';
+  }
+}
+
+// ---- Match Symbol ----
+function renderMatch(ch) {
+  const puzzle = ch.puzzle;
+  const tab = document.getElementById('puzzleTab');
+  
+  // Shuffle descriptions
+  const shuffledDescs = puzzle.pairs.map((p, i) => ({ ...p, origIndex: i }));
+  const shuffledRight = [...shuffledDescs].sort(() => Math.random() - 0.5);
+  
+  let leftHTML = '';
+  let rightHTML = '';
+  
+  puzzle.pairs.forEach((pair, i) => {
+    leftHTML += `<button class="match-item" id="match-left-${i}" onclick="selectMatchItem('left', ${i})" data-side="left" data-index="${i}" tabindex="0">${pair.symbol}</button>`;
+  });
+  
+  shuffledRight.forEach((pair, i) => {
+    rightHTML += `<button class="match-item" id="match-right-${i}" onclick="selectMatchItem('right', ${i})" data-side="right" data-index="${i}" data-orig="${pair.origIndex}" tabindex="0">${pair.description}</button>`;
+  });
+  
+  tab.innerHTML = `
+    <div class="puzzle-instructions"><strong>Match the Symbols:</strong> Tap a symbol on the left, then tap its matching description on the right. Matched pairs will lock in place.</div>
+    <div class="match-grid">
+      <div class="match-column">
+        <div class="match-column-title">Symbols</div>
+        ${leftHTML}
+      </div>
+      <div class="match-column">
+        <div class="match-column-title">Descriptions</div>
+        ${rightHTML}
+      </div>
+    </div>
+    <div id="puzzleFeedback"></div>
+  `;
+  
+  window._matchState = {
+    selected: null, // { side, index }
+    matched: new Set(),
+    matchedRight: new Set(),
+    totalPairs: puzzle.pairs.length,
+    shuffledRight: shuffledRight
+  };
+}
+
+function selectMatchItem(side, index) {
+  const ms = window._matchState;
+  
+  // Ignore if already matched
+  if (side === 'left' && ms.matched.has(index)) return;
+  if (side === 'right' && ms.matchedRight.has(index)) return;
+  
+  const el = document.getElementById('match-' + side + '-' + index);
+  
+  if (!ms.selected) {
+    // First selection
+    ms.selected = { side, index };
+    el.classList.add('selected');
+  } else if (ms.selected.side === side) {
+    // Same side - switch selection
+    document.getElementById('match-' + ms.selected.side + '-' + ms.selected.index).classList.remove('selected');
+    ms.selected = { side, index };
+    el.classList.add('selected');
+  } else {
+    // Different side - attempt match
+    const prevEl = document.getElementById('match-' + ms.selected.side + '-' + ms.selected.index);
+    
+    let leftIdx, rightIdx;
+    if (ms.selected.side === 'left') {
+      leftIdx = ms.selected.index;
+      rightIdx = index;
+    } else {
+      leftIdx = index;
+      rightIdx = ms.selected.index;
+    }
+    
+    const rightOrig = parseInt(document.getElementById('match-right-' + rightIdx).dataset.orig);
+    
+    if (leftIdx === rightOrig) {
+      // Correct match
+      prevEl.classList.remove('selected');
+      prevEl.classList.add('matched');
+      el.classList.add('matched');
+      ms.matched.add(leftIdx);
+      ms.matchedRight.add(rightIdx);
+      ms.selected = null;
+      
+      // Check if all matched
+      if (ms.matched.size === ms.totalPairs) {
+        const ch = getChapterData();
+        state.progress[ch.chapter].puzzle = true;
+        state.puzzleState[ch.chapter].solved = true;
+        updateSessionProgress();
+        const fb = document.getElementById('puzzleFeedback');
+        fb.innerHTML = '<div class="puzzle-feedback success">&#10003; All matched! Wonderful work!</div>';
+        checkChapterCompletion();
+      }
+    } else {
+      // Wrong match
+      prevEl.classList.remove('selected');
+      el.classList.add('wrong');
+      prevEl.classList.add('wrong');
+      ms.selected = null;
+      setTimeout(() => {
+        el.classList.remove('wrong');
+        prevEl.classList.remove('wrong');
+      }, 600);
+    }
+  }
+}
+
+// ---- Order Events ----
+function renderOrder(ch) {
+  const puzzle = ch.puzzle;
+  const tab = document.getElementById('puzzleTab');
+  
+  // Use shuffled_order to create initial ordering
+  const currentOrder = puzzle.shuffled_order.map(i => ({ text: puzzle.events[i], origIndex: i }));
+  
+  window._orderState = {
+    items: currentOrder,
+    correctOrder: puzzle.events,
+    checked: false
+  };
+  
+  renderOrderList(tab, ch);
+}
+
+function renderOrderList(tab, ch) {
+  const os = window._orderState;
+  
+  let listHTML = os.items.map((item, i) => `
+    <div class="order-item" id="order-item-${i}" data-index="${i}">
+      <span class="order-number">${i + 1}</span>
+      <span class="order-text">${item.text}</span>
+      <div class="order-controls">
+        <button class="order-btn" onclick="moveOrderItem(${i}, -1)" ${i === 0 ? 'disabled' : ''} aria-label="Move up" tabindex="0">&#9650;</button>
+        <button class="order-btn" onclick="moveOrderItem(${i}, 1)" ${i === os.items.length - 1 ? 'disabled' : ''} aria-label="Move down" tabindex="0">&#9660;</button>
+      </div>
+    </div>
+  `).join('');
+  
+  if (!tab) tab = document.getElementById('puzzleTab');
+  
+  tab.innerHTML = `
+    <div class="puzzle-instructions"><strong>Order the Events:</strong> Arrange these events in the correct order as they appear in the chapter. Use the arrows to move items up or down.</div>
+    <div class="order-list" id="orderList">${listHTML}</div>
+    <div class="puzzle-actions">
+      <button class="puzzle-check-btn" onclick="checkOrder()" tabindex="0">Check Order</button>
+      <button class="puzzle-reset-btn" onclick="renderOrder(getChapterData())" tabindex="0">Reset</button>
+    </div>
+    <div id="puzzleFeedback"></div>
+  `;
+}
+
+function moveOrderItem(index, direction) {
+  const os = window._orderState;
+  const newIndex = index + direction;
+  if (newIndex < 0 || newIndex >= os.items.length) return;
+  
+  // Swap
+  [os.items[index], os.items[newIndex]] = [os.items[newIndex], os.items[index]];
+  
+  renderOrderList(null, getChapterData());
+}
+
+function checkOrder() {
+  const ch = getChapterData();
+  const os = window._orderState;
+  let allCorrect = true;
+  
+  os.items.forEach((item, i) => {
+    const el = document.getElementById('order-item-' + i);
+    if (item.origIndex === i) {
+      el.classList.add('correct-order');
+      el.classList.remove('incorrect-order');
+    } else {
+      el.classList.add('incorrect-order');
+      el.classList.remove('correct-order');
+      allCorrect = false;
+    }
+  });
+  
+  const fb = document.getElementById('puzzleFeedback');
+  if (allCorrect) {
+    fb.innerHTML = '<div class="puzzle-feedback success">&#10003; Perfect order! You know this chapter well.</div>';
+    state.progress[ch.chapter].puzzle = true;
+    state.puzzleState[ch.chapter].solved = true;
+    updateSessionProgress();
+    checkChapterCompletion();
+  } else {
+    fb.innerHTML = '<div class="puzzle-feedback error">Some events are out of order. The green ones are correct — keep adjusting the rest!</div>';
+  }
+}
+
+function renderPuzzleSolved(ch) {
+  const tab = document.getElementById('puzzleTab');
+  tab.innerHTML = `
+    <div class="quiz-results">
+      <div class="completion-icon" style="font-size:48px;">&#10003;</div>
+      <div class="quiz-results-message">Puzzle Complete!</div>
+      <p class="quiz-results-sub">You've solved this chapter's puzzle. Great work!</p>
+      <button class="puzzle-reset-btn" onclick="resetPuzzle()" tabindex="0" style="margin:0 auto;">Try Again</button>
+    </div>
+  `;
+}
+
+function resetPuzzle() {
+  const ch = getChapterData();
+  state.puzzleState[ch.chapter] = { solved: false };
+  renderPuzzle(ch);
+}
+
+// ========== CHAPTER COMPLETION ==========
+function checkChapterCompletion() {
+  const p = state.progress[state.currentChapter];
+  if (p.devotional && p.quiz && p.puzzle) {
+    // Show completion overlay after a brief delay
+    setTimeout(() => {
+      const ch = getChapterData();
+      document.getElementById('completionTitle').textContent = 'Chapter ' + ch.chapter + ' Complete!';
+      document.getElementById('completionSub').textContent = "You've finished all three modes for \"" + ch.title + '.\" Beautiful work!';
+      document.getElementById('completionOverlay').classList.add('visible');
+      document.querySelector('.completion-btn').focus();
+    }, 500);
+  }
+}
+
+function closeCompletion() {
+  document.getElementById('completionOverlay').classList.remove('visible');
+}
+
+// ========== KEYBOARD SUPPORT ==========
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    // Close completion overlay if open
+    const overlay = document.getElementById('completionOverlay');
+    if (overlay.classList.contains('visible')) {
+      closeCompletion();
+      return;
+    }
+    // Otherwise go back
+    goBack();
+  }
+});
+
+// ========== INIT ==========
+initTheme();
+updateWelcomeProgress();
+</script>
+</body>
+</html>
