@@ -1498,6 +1498,22 @@ function renderQuiz(ch) {
     return;
   }
   
+  // If we restored a state where the question was already answered,
+  // advance to the next unanswered question
+  if (qs.answered) {
+    qs.currentQ++;
+    qs.answered = false;
+    if (qs.currentQ >= ch.quiz.questions.length) {
+      qs.finished = true;
+      state.progress[ch.chapter].quiz = true;
+      saveProgress();
+      updateSessionProgress();
+      renderQuizResults(ch);
+      return;
+    }
+    saveProgress();
+  }
+  
   const questions = ch.quiz.questions;
   const q = questions[qs.currentQ];
   const total = questions.length;
