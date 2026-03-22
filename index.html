@@ -486,12 +486,19 @@ body {
   gap: 12px;
 }
 .reflection-toggle:focus-visible { outline: 2px solid var(--primary); outline-offset: -2px; }
+.reflection-status {
+  flex-shrink: 0;
+  font-size: 14px;
+  color: var(--secondary);
+  margin-left: auto;
+}
 .reflection-arrow {
   flex-shrink: 0;
   transition: transform var(--transition);
   color: var(--text-muted);
   font-size: 12px;
 }
+.reflection-card.has-notes { border-color: var(--secondary); border-left: 3px solid var(--secondary); }
 .reflection-card.open .reflection-arrow { transform: rotate(180deg); }
 .reflection-body {
   display: none;
@@ -1197,6 +1204,8 @@ const state = {
   quizState: {},
   // Puzzle state per chapter
   puzzleState: {},
+  // Reflection notes per chapter { chapterNum: { 0: 'text', 1: 'text', ... } }
+  reflections: {},
 };
 
 // ========== PERSISTENCE ==========
@@ -1204,7 +1213,7 @@ const STORAGE_KEY = 'zechariah_progress_v1';
 
 function saveProgress() {
   try {
-    const data = { progress: state.progress, quizState: state.quizState, puzzleState: state.puzzleState };
+    const data = { progress: state.progress, quizState: state.quizState, puzzleState: state.puzzleState, reflections: state.reflections };
     localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
   } catch (e) { /* storage unavailable */ }
 }
@@ -1217,6 +1226,7 @@ function loadProgress() {
       if (data.progress) state.progress = data.progress;
       if (data.quizState) state.quizState = data.quizState;
       if (data.puzzleState) state.puzzleState = data.puzzleState;
+      if (data.reflections) state.reflections = data.reflections;
     }
   } catch (e) { /* storage unavailable */ }
 }
@@ -1417,17 +1427,25 @@ function renderDevotional(ch) {
   const tab = document.getElementById('devotionalTab');
   const isDone = state.progress[ch.chapter].devotional;
   
-  let promptsHTML = ch.devotional.reflection_prompts.map((p, i) => `
-    <div class="reflection-card" id="refl-${ch.chapter}-${i}">
+  // Load any saved reflections for this chapter
+  const savedRefls = state.reflections[ch.chapter] || {};
+  
+  let promptsHTML = ch.devotional.reflection_prompts.map((p, i) => {
+    const savedText = savedRefls[i] || '';
+    const escapedText = savedText.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    return `
+    <div class="reflection-card${savedText ? ' has-notes' : ''}" id="refl-${ch.chapter}-${i}">
       <button class="reflection-toggle" onclick="toggleReflection(${ch.chapter}, ${i})" aria-expanded="false">
         <span>${p}</span>
+        <span class="reflection-status">${savedText ? '&#9998;' : ''}</span>
         <span class="reflection-arrow">&#9660;</span>
       </button>
       <div class="reflection-body">
-        <textarea class="reflection-space" placeholder="Write your thoughts here..." aria-label="Your reflection"></textarea>
+        <textarea class="reflection-space" placeholder="Write your thoughts here..." aria-label="Your reflection" oninput="saveReflection(${ch.chapter}, ${i}, this)">${escapedText}</textarea>
       </div>
     </div>
-  `).join('');
+  `;
+  }).join('');
   
   tab.innerHTML = `
     <div class="devotional-summary">${ch.devotional.summary}</div>
@@ -1452,6 +1470,28 @@ function toggleReflection(chapter, index) {
   const toggle = card.querySelector('.reflection-toggle');
   card.classList.toggle('open');
   toggle.setAttribute('aria-expanded', card.classList.contains('open'));
+}
+
+// Debounced save for reflections
+let _reflSaveTimer = null;
+function saveReflection(chapter, index, textarea) {
+  if (!state.reflections[chapter]) state.reflections[chapter] = {};
+  state.reflections[chapter][index] = textarea.value;
+  
+  // Update the note indicator
+  const card = document.getElementById('refl-' + chapter + '-' + index);
+  const statusEl = card.querySelector('.reflection-status');
+  if (textarea.value.trim()) {
+    card.classList.add('has-notes');
+    statusEl.innerHTML = '&#9998;';
+  } else {
+    card.classList.remove('has-notes');
+    statusEl.innerHTML = '';
+  }
+  
+  // Debounce the save to localStorage (save after 500ms of no typing)
+  clearTimeout(_reflSaveTimer);
+  _reflSaveTimer = setTimeout(() => saveProgress(), 500);
 }
 
 function markDevotionalDone() {
